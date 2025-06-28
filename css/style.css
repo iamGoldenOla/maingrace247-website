@@ -1387,4 +1387,252 @@ body {
     background: linear-gradient(135deg, #4CAF50, #6FBF73) !important;
     color: white !important;
     border: none !important;
+}
+
+/* ===== ENHANCED MOBILE RESPONSIVENESS ===== */
+
+/* Mobile-first approach improvements */
+@media (max-width: 768px) {
+    /* Improved container spacing */
+    .max-w-7xl {
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+    }
+    
+    /* Better grid layouts for mobile */
+    .grid {
+        gap: 1rem !important;
+    }
+    
+    /* Improved card spacing */
+    .bg-white {
+        margin-bottom: 1rem !important;
+    }
+    
+    /* Better button sizing for touch */
+    .btn-primary,
+    .btn-secondary {
+        min-height: 48px !important;
+        padding: 0.875rem 1.5rem !important;
+        font-size: 1rem !important;
+        font-weight: 600 !important;
+    }
+    
+    /* Improved form elements */
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="password"],
+    textarea,
+    select {
+        font-size: 16px !important; /* Prevents zoom on iOS */
+        min-height: 48px !important;
+        padding: 0.75rem !important;
+    }
+    
+    /* Better navigation for mobile */
+    .nav-link {
+        padding: 0.75rem 1rem !important;
+        margin: 0.25rem 0 !important;
+        border-radius: 0.5rem !important;
+    }
+    
+    /* Mobile menu improvements */
+    #mobile-menu {
+        padding: 1rem !important;
+    }
+    
+    .mobile-nav-link {
+        padding: 1rem 1.5rem !important;
+        margin: 0.5rem 0 !important;
+        border-radius: 0.75rem !important;
+        font-size: 1rem !important;
+    }
+    
+    /* Improved hero section */
+    .hero-title {
+        font-size: 2.5rem !important;
+        line-height: 1.2 !important;
+        margin-bottom: 1rem !important;
+    }
+    
+    .hero-description {
+        font-size: 1.1rem !important;
+        line-height: 1.6 !important;
+        margin-bottom: 2rem !important;
+    }
+    
+    /* Better section spacing */
+    .py-20 {
+        padding-top: 3rem !important;
+        padding-bottom: 3rem !important;
+    }
+    
+    .py-16 {
+        padding-top: 2rem !important;
+        padding-bottom: 2rem !important;
+    }
+    
+    /* Improved card layouts */
+    .service-card,
+    .product-card,
+    .blog-card {
+        padding: 1.5rem !important;
+        margin-bottom: 1.5rem !important;
+    }
+    
+    /* Better image handling */
+    img {
+        max-width: 100% !important;
+        height: auto !important;
+    }
+    
+    /* Improved footer */
+    .footer-content {
+        grid-template-columns: 1fr !important;
+        gap: 2rem !important;
+        text-align: center !important;
+    }
+    
+    .footer-bottom {
+        flex-direction: column !important;
+        gap: 1rem !important;
+        text-align: center !important;
+    }
+}
+
+/* Extra small devices (phones, 320px and up) */
+@media (max-width: 480px) {
+    /* Even more compact layout */
+    .hero-title {
+        font-size: 2rem !important;
+    }
+    
+    .hero-description {
+        font-size: 1rem !important;
+    }
+    
+    .section-title {
+        font-size: 1.75rem !important;
+    }
+    
+    /* Stack buttons vertically */
+    .flex.flex-col.sm\\:flex-row {
+        flex-direction: column !important;
+    }
+    
+    .flex.flex-col.sm\\:flex-row > * {
+        margin-bottom: 1rem !important;
+    }
+    
+    /* Better form layout */
+    .contact-form-container {
+        padding: 1rem !important;
+    }
+    
+    /* Improved admin dashboard */
+    .admin-sidebar {
+        position: fixed !important;
+        left: -100% !important;
+        width: 100% !important;
+        height: 100vh !important;
+        z-index: 1000 !important;
+        transition: left 0.3s ease !important;
+    }
+    
+    .admin-sidebar.show {
+        left: 0 !important;
+    }
+    
+    .admin-content {
+        margin-left: 0 !important;
+        width: 100% !important;
+        padding: 1rem !important;
+    }
+}
+
+/* ===== TOUCH-FRIENDLY IMPROVEMENTS ===== */
+
+/* Ensure all interactive elements are touch-friendly */
+.nav-link,
+.btn-primary,
+.btn-secondary,
+.mobile-nav-link,
+.social-link,
+.category-btn,
+.form-input,
+.form-textarea,
+.form-select {
+    min-height: 44px !important;
+    min-width: 44px !important;
+}
+
+/* Better focus states for accessibility */
+.nav-link:focus,
+.btn-primary:focus,
+.mobile-nav-link:focus,
+.form-input:focus,
+.form-textarea:focus {
+    outline: 2px solid #4CAF50 !important;
+    outline-offset: 2px !important;
+}
+
+/* ===== PERFORMANCE OPTIMIZATIONS ===== */
+
+/* Reduce animations on mobile for better performance */
+@media (max-width: 768px) {
+    .floating-leaf {
+        animation-duration: 4s !important;
+    }
+    
+    .parallax-section {
+        background-attachment: scroll !important;
+    }
+    
+    /* Simplify shadows for better performance */
+    .shadow-lg,
+    .shadow-xl {
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1) !important;
+    }
+}
+
+/* ===== ACCESSIBILITY IMPROVEMENTS ===== */
+
+/* Better contrast and readability */
+@media (max-width: 768px) {
+    body {
+        font-size: 16px !important;
+        line-height: 1.6 !important;
+    }
+    
+    /* Ensure proper text contrast */
+    .text-gray-600 {
+        color: #4B5563 !important;
+    }
+    
+    .text-gray-500 {
+        color: #6B7280 !important;
+    }
+}
+
+/* ===== MOBILE-SPECIFIC UTILITIES ===== */
+
+/* Hide elements on mobile */
+.mobile-hidden {
+    display: none !important;
+}
+
+/* Show elements only on mobile */
+.mobile-only {
+    display: block !important;
+}
+
+@media (min-width: 769px) {
+    .mobile-only {
+        display: none !important;
+    }
+    
+    .mobile-hidden {
+        display: block !important;
+    }
 } 

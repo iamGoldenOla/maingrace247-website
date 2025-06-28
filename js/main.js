@@ -11,6 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
     initFormValidation();
     initLazyLoading();
     initPerformanceOptimizations();
+    initMobileEnhancements();
     
     console.log('Maingrace247 website initialized');
 });
@@ -388,4 +389,195 @@ window.Maingrace247 = {
     showSuccessMessage,
     debounce,
     throttle
-}; 
+};
+
+// Mobile-specific improvements
+function initMobileEnhancements() {
+    // Prevent zoom on input focus (iOS)
+    const inputs = document.querySelectorAll('input[type="text"], input[type="email"], input[type="tel"], input[type="password"], textarea');
+    inputs.forEach(input => {
+        input.addEventListener('focus', function() {
+            this.style.fontSize = '16px';
+        });
+    });
+
+    // Improve mobile menu touch interactions
+    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    
+    if (mobileMenuBtn && mobileMenu) {
+        // Add touch feedback
+        mobileMenuBtn.addEventListener('touchstart', function() {
+            this.style.transform = 'scale(0.95)';
+        });
+        
+        mobileMenuBtn.addEventListener('touchend', function() {
+            this.style.transform = 'scale(1)';
+        });
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', function(e) {
+            if (!mobileMenuBtn.contains(e.target) && !mobileMenu.contains(e.target)) {
+                mobileMenu.classList.add('hidden');
+            }
+        });
+
+        // Add swipe to close functionality
+        let startX = 0;
+        let startY = 0;
+
+        mobileMenu.addEventListener('touchstart', function(e) {
+            startX = e.touches[0].clientX;
+            startY = e.touches[0].clientY;
+        });
+
+        mobileMenu.addEventListener('touchmove', function(e) {
+            if (!startX || !startY) return;
+
+            const diffX = startX - e.touches[0].clientX;
+            const diffY = startY - e.touches[0].clientY;
+
+            if (Math.abs(diffX) > Math.abs(diffY) && diffX > 50) {
+                // Swipe left - close menu
+                mobileMenu.classList.add('hidden');
+                startX = 0;
+                startY = 0;
+            }
+        });
+    }
+
+    // Improve button touch interactions
+    const buttons = document.querySelectorAll('.btn-primary, .btn-secondary, .nav-link, .mobile-nav-link');
+    buttons.forEach(button => {
+        button.addEventListener('touchstart', function() {
+            this.style.transform = 'scale(0.98)';
+        });
+        
+        button.addEventListener('touchend', function() {
+            this.style.transform = 'scale(1)';
+        });
+    });
+
+    // Optimize images for mobile
+    const images = document.querySelectorAll('img');
+    images.forEach(img => {
+        img.addEventListener('load', function() {
+            this.style.opacity = '1';
+        });
+        
+        // Add lazy loading for better performance
+        if ('IntersectionObserver' in window) {
+            const imageObserver = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const img = entry.target;
+                        img.src = img.dataset.src || img.src;
+                        img.classList.remove('lazy');
+                        imageObserver.unobserve(img);
+                    }
+                });
+            });
+            
+            imageObserver.observe(img);
+        }
+    });
+
+    // Improve form interactions on mobile
+    const forms = document.querySelectorAll('form');
+    forms.forEach(form => {
+        form.addEventListener('submit', function(e) {
+            // Add loading state for better UX
+            const submitBtn = this.querySelector('button[type="submit"]');
+            if (submitBtn) {
+                submitBtn.disabled = true;
+                submitBtn.innerHTML = '<span class="loading-spinner"></span> Sending...';
+                
+                // Re-enable after a delay (in case of error)
+                setTimeout(() => {
+                    submitBtn.disabled = false;
+                    submitBtn.innerHTML = submitBtn.dataset.originalText || 'Submit';
+                }, 5000);
+            }
+        });
+    });
+
+    // Add smooth scrolling for mobile
+    const smoothScrollLinks = document.querySelectorAll('a[href^="#"]');
+    smoothScrollLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+            const href = this.getAttribute('href');
+            if (href !== '#') {
+                e.preventDefault();
+                const target = document.querySelector(href);
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                    
+                    // Close mobile menu if open
+                    if (mobileMenu && !mobileMenu.classList.contains('hidden')) {
+                        mobileMenu.classList.add('hidden');
+                    }
+                }
+            }
+        });
+    });
+
+    // Improve admin dashboard mobile experience
+    if (window.location.pathname.includes('admin-dashboard.html')) {
+        const adminSidebar = document.querySelector('.w-64');
+        const adminContent = document.querySelector('.flex-1');
+        
+        if (adminSidebar && adminContent) {
+            // Add mobile menu toggle for admin sidebar
+            const mobileToggle = document.createElement('button');
+            mobileToggle.className = 'md:hidden fixed top-20 left-4 z-50 bg-green-600 text-white p-2 rounded-lg shadow-lg';
+            mobileToggle.innerHTML = '<svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>';
+            
+            document.body.appendChild(mobileToggle);
+            
+            mobileToggle.addEventListener('click', function() {
+                adminSidebar.classList.toggle('show');
+            });
+            
+            // Close sidebar when clicking outside
+            document.addEventListener('click', function(e) {
+                if (!adminSidebar.contains(e.target) && !mobileToggle.contains(e.target)) {
+                    adminSidebar.classList.remove('show');
+                }
+            });
+        }
+    }
+}
+
+// Add CSS for loading spinner
+const style = document.createElement('style');
+style.textContent = `
+    .loading-spinner {
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        border: 2px solid #ffffff;
+        border-radius: 50%;
+        border-top-color: transparent;
+        animation: spin 1s ease-in-out infinite;
+    }
+    
+    @keyframes spin {
+        to { transform: rotate(360deg); }
+    }
+    
+    /* Mobile-specific improvements */
+    @media (max-width: 768px) {
+        .lazy {
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+        
+        .lazy.loaded {
+            opacity: 1;
+        }
+    }
+`;
+document.head.appendChild(style); 
