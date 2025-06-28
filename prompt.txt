@@ -1,0 +1,233 @@
+# Maingrace247 Tradomedical Service - Website Development Prompt
+
+## Project Overview
+**Project Name**: Maingrace Tradomedical Service Website
+**Focus**: Holistic health using traditional herbal remedies and natural healing
+**Brand Philosophy**: Natural healing, well-being, and earthy wellness
+**Target Experience**: Calming, nature-inspired, professional tradomedical service
+
+## Technology Stack Requirements
+- **Primary**: HTML5, CSS3, JavaScript, JSON
+- **Framework**: React (where necessary for interactive components)
+- **Styling**: TailwindCSS as the default styling framework
+- **Images**: .webp format with lazy loading, compression, and alt text
+- **Responsive**: Mobile-first, fully responsive layout approach
+
+## Brand Identity & Design System
+
+### Color Palette
+- **Primary Green**: #4CAF50 (Maingrace logo green - represents nature, health, vitality)
+- **Secondary Green**: #6FBF73 (lighter green for hover effects)
+- **Earthy Tones**: Soft browns, creams, and neutral colors for subtle effects
+- **Background**: Dark green or earthy tones that complement the natural theme
+
+### Typography
+- **Primary Font**: Lora or Playfair Display (for the healing/wellness theme)
+- **Secondary Font**: Inter or Nunito (for readability and modern feel)
+- **Google Fonts**: Appropriate for tradomedical/wellness websites
+
+### Custom Cursor Design Requirements
+1. **Default Cursor**: Leaf or herb icon in Maingrace green (#4CAF50)
+2. **Hover Cursor**: Hand icon in lighter green (#6FBF73) for interactive elements
+3. **Behavior**: Smooth transitions, subtle size adjustments, gentle animations
+4. **Accessibility**: Clear visibility, non-distracting, motion-sensitive user friendly
+5. **File Format**: Optimized .webp files for web use (with PNG fallback for cursor compatibility)
+
+## SEO & Performance Requirements
+- Complete SEO meta tags: title, description, Open Graph, Twitter Cards, canonical URLs
+- Generate robots.txt and sitemap.xml files
+- Optimize performance with minified code, async/defer scripts, image compression
+- Support dark mode toggle on all websites
+- Optimize for Core Web Vitals
+
+## Content Guidelines
+- **Avoid "lorem ipsum"** — generate real, human-sounding content about herbal medicine, wellness, and tradomedical services
+- **Professional tone**: Calming, trustworthy, knowledgeable about traditional healing
+- **Content focus**: Herbal remedies, wellness consultations, natural healing methods
+- **Language**: Accessible medical terminology with explanations for lay audiences
+
+## Key Website Sections
+
+### Essential Pages
+1. **Homepage**: Hero section with wellness messaging, service overview
+2. **About**: Maingrace's philosophy, traditional medicine approach, credentials
+3. **Services**: Detailed tradomedical services, consultation types, herbal remedies
+4. **Products**: Herbal products, supplements, wellness items (if applicable)
+5. **Consultations**: Booking system, consultation process, what to expect
+6. **Blog/Resources**: Wellness tips, herbal knowledge, health articles
+7. **Contact**: Location, consultation booking, contact information
+8. **Testimonials**: Client success stories, healing testimonials
+
+### Interactive Features
+- **Consultation Booking System**: Calendar integration, form handling
+- **Product Catalog**: If selling herbal products
+- **Blog/Resource Center**: Educational content about traditional medicine
+- **Contact Forms**: Consultation requests, general inquiries
+- **Testimonial Display**: Client feedback and success stories
+
+## Design Requirements
+
+### Visual Elements
+- **Nature-inspired imagery**: Herbs, plants, natural healing elements (all in .webp format)
+- **Calming color scheme**: Greens, earth tones, soft backgrounds
+- **Professional medical aesthetic**: Clean, trustworthy, accessible
+- **Cultural sensitivity**: Respectful representation of traditional medicine
+
+### User Experience
+- **Intuitive navigation**: Easy access to services and booking
+- **Trust indicators**: Credentials, testimonials, professional presentation
+- **Accessibility**: Keyboard navigation, ARIA labels, readable contrast
+- **Mobile optimization**: Essential for clients booking consultations
+
+## Code Standards & Structure
+
+### Naming Conventions
+- **camelCase**: Functions, variables
+- **kebab-case**: File and folder names
+- **PascalCase**: React components
+
+### File Organization
+```
+maingrace247-website/
+├── index.html
+├── css/
+│   ├── style.css
+│   ├── tailwind.css
+│   └── cursor.css
+├── js/
+│   ├── main.js
+│   ├── cursor.js
+│   └── booking.js
+├── react-components/
+│   ├── BookingForm.jsx
+│   ├── ProductCatalog.jsx
+│   └── TestimonialSlider.jsx
+├── images/
+│   ├── cursor/
+│   │   ├── leaf-cursor.webp
+│   │   └── hand-cursor.webp
+│   ├── herbs/
+│   │   ├── herb-1.webp
+│   │   ├── herb-2.webp
+│   │   └── herb-3.webp
+│   ├── wellness/
+│   │   ├── wellness-1.webp
+│   │   ├── wellness-2.webp
+│   │   └── wellness-3.webp
+│   ├── products/
+│   │   ├── product-1.webp
+│   │   ├── product-2.webp
+│   │   └── product-3.webp
+│   └── testimonials/
+│       ├── client-1.webp
+│       ├── client-2.webp
+│       └── client-3.webp
+├── data/
+│   ├── services.json
+│   ├── products.json
+│   └── testimonials.json
+├── robots.txt
+├── sitemap.xml
+└── README.md
+```
+
+### Code Quality
+- Comment HTML, CSS, and JavaScript sections clearly
+- Use strict equality (===)
+- Meaningful class names and organized structure
+- Avoid unused code or libraries — keep it lean
+- Modular React components where appropriate
+
+## Custom Cursor Implementation
+
+### CSS Implementation
+```css
+/* Custom cursor styles */
+.custom-cursor {
+  cursor: url('images/cursor/leaf-cursor.webp'), auto;
+}
+
+.interactive-element {
+  cursor: url('images/cursor/hand-cursor.webp'), pointer;
+}
+
+/* Smooth transitions */
+* {
+  transition: all 0.3s ease;
+}
+```
+
+### JavaScript Functionality
+- Smooth cursor transitions
+- Hover effects for interactive elements
+- Responsive cursor behavior
+- Fallback for unsupported browsers
+
+## Image Optimization Requirements
+
+### .webp Format Specifications
+- **All images must be in .webp format** for optimal performance
+- **Compression**: 80-85% quality for photos, 90-95% for graphics
+- **Dimensions**: Responsive images with multiple sizes (320px, 640px, 1024px, 1920px)
+- **Lazy loading**: Implemented on all images
+- **Alt text**: Descriptive alt text for accessibility
+- **Fallback**: Provide PNG/JPG fallbacks for older browsers
+
+### Image Categories
+- **Product images**: Herbal remedies, supplements, wellness products
+- **Service images**: Consultation photos, healing practices
+- **Testimonial images**: Client photos (with permission)
+- **Background images**: Nature scenes, herbs, wellness environments
+- **Icon images**: UI elements, navigation icons
+
+## Pre-Development Questions
+
+Before building, confirm:
+
+1. **Services Offered**: What specific tradomedical services will be featured?
+2. **Product Sales**: Will the site include an e-commerce component for herbal products?
+3. **Consultation Types**: What types of consultations (online, in-person, herbal prescriptions)?
+4. **Target Audience**: Primary demographic and health concerns?
+5. **Content Strategy**: Blog focus, educational content, client testimonials?
+6. **Booking System**: Preferred booking platform or custom solution?
+7. **Payment Integration**: If selling products or consultations online?
+8. **Legal Requirements**: Medical disclaimers, privacy policies, terms of service?
+9. **Footer Credits**: Permission for © 2025 Maingrace247 Tradomedical Service?
+10. **Image Assets**: Available high-quality images of herbs, products, and services?
+
+## Performance Checklist
+
+- [ ] All images converted to .webp format
+- [ ] Custom cursor files optimized and implemented in .webp
+- [ ] Lazy loading implemented on all images
+- [ ] Responsive images with multiple sizes
+- [ ] CSS and JS minified
+- [ ] Critical CSS inlined
+- [ ] Non-critical resources loaded asynchronously
+- [ ] SEO meta tags complete
+- [ ] Accessibility features implemented
+- [ ] Mobile-first responsive design
+- [ ] Cross-browser testing completed
+- [ ] Booking system functionality tested
+- [ ] Contact forms working properly
+- [ ] Image compression optimized (80-95% quality)
+
+## Compliance & Legal
+
+- **Medical Disclaimers**: Required for tradomedical services
+- **Privacy Policy**: HIPAA compliance if handling patient information
+- **Terms of Service**: Clear service descriptions and limitations
+- **Cookie Policy**: If using tracking or analytics
+- **Accessibility**: WCAG 2.1 AA compliance
+- **Image Rights**: Ensure all images have proper licensing/permissions
+
+## Notes
+
+- Always ask for user permission before inserting any signature, branding, or credits
+- Generate real, contextual content about tradomedical services and wellness
+- Ensure all interactive elements are keyboard accessible
+- Test on multiple devices and browsers
+- Optimize for Core Web Vitals
+- Maintain professional medical website standards
+- Respect traditional medicine practices and cultural sensitivity
+- **All images must be in .webp format** for optimal performance and modern web standards 

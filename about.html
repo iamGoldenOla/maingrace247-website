@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Maingrace247</title>
+    <meta name="description" content="Learn about Maingrace247's mission to provide traditional herbal medicine and holistic wellness solutions in Kenya.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- TailwindCSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header-fix.css">
+    <link rel="stylesheet" href="css/cursor.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/webp" href="images/MAINGRACE-LOGO.webp">
+</head>
+<body class="font-inter bg-gradient-to-br from-green-50 to-white">
+    <!-- Custom Cursor -->
+    <div id="custom-cursor" class="custom-cursor"></div>
+    <div id="cursor-trail" class="cursor-trail"></div>
+    
+    <!-- Navigation - FIXED HEADER -->
+    <nav class="fixed top-0 w-full z-40">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex-shrink-0">
+                    <a href="index.html" class="flex items-center space-x-2">
+                        <span class="text-xl font-lora font-semibold">Maingrace247</span>
+                    </a>
+                </div>
+                
+                <!-- Right Side Navigation and CTA -->
+                <div class="hidden md:flex items-center space-x-4">
+                    <!-- Desktop Navigation -->
+                    <div class="flex items-baseline space-x-4">
+                        <a href="index.html" class="nav-link">Home</a>
+                        <a href="about.html" class="nav-link active">About</a>
+                        <a href="services.html" class="nav-link">Services</a>
+                        <a href="products.html" class="nav-link">Products</a>
+                        <a href="consultations.html" class="nav-link">Consultations</a>
+                        <a href="blog.html" class="nav-link">Blog</a>
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </div>
+                    
+                    <!-- CTA Button -->
+                    <a href="consultations.html" class="btn-primary" style="border-radius: 2rem !important; background: linear-gradient(135deg, #4CAF50, #6FBF73) !important; color: white !important; padding: 1rem 2.5rem !important; font-weight: 600 !important; font-size: 1rem !important; text-decoration: none !important; border: none !important; cursor: pointer !important; box-shadow: 0 4px 15px rgba(76, 175, 80, 0.3) !important; transition: all 0.3s ease !important; display: inline-block !important; text-align: center !important;">Book Consultation</a>
+                </div>
+                
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="p-2 rounded-md">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile Navigation -->
+        <div id="mobile-menu" class="hidden md:hidden">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="index.html" class="mobile-nav-link">Home</a>
+                <a href="about.html" class="mobile-nav-link active">About</a>
+                <a href="services.html" class="mobile-nav-link">Services</a>
+                <a href="products.html" class="mobile-nav-link">Products</a>
+                <a href="consultations.html" class="mobile-nav-link">Consultations</a>
+                <a href="blog.html" class="mobile-nav-link">Blog</a>
+                <a href="contact.html" class="mobile-nav-link">Contact</a>
+                <a href="consultations.html" class="btn-primary w-full mt-4" style="border-radius: 2rem !important; background: linear-gradient(135deg, #4CAF50, #6FBF73) !important; color: white !important; padding: 1rem 2.5rem !important; font-weight: 600 !important; font-size: 1rem !important; text-decoration: none !important; border: none !important; cursor: pointer !important; box-shadow: 0 4px 15px rgba(76, 175, 80, 0.3) !important; transition: all 0.3s ease !important; display: inline-block !important; text-align: center !important;">Book Consultation</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ABOUT SECTION -->
+    <section class="pt-24 pb-16 bg-gradient-to-br from-green-500 to-green-600 text-white relative overflow-hidden parallax-section" style="background-image: url('images/ccc.webp'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+        <div class="absolute inset-0 bg-emerald-900/30"></div>
+        <!-- Floating Elements -->
+        <div class="absolute top-20 left-10 floating-leaf">🌿</div>
+        <div class="absolute top-40 right-20 floating-leaf">🍃</div>
+        <div class="absolute bottom-40 left-20 floating-leaf">🌱</div>
+        <div class="absolute top-60 left-1/4 floating-leaf">🌿</div>
+        <div class="absolute bottom-60 right-1/4 floating-leaf">🍃</div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center">
+                <nav class="flex items-center justify-center gap-2 mb-6 text-green-100">
+                    <a href="index.html" class="hover:text-white transition-colors">Home</a>
+                    <span>/</span>
+                    <span>About</span>
+                </nav>
+                <h1 class="font-lora text-4xl md:text-6xl font-bold mb-6">
+                    About Maingrace247
+                </h1>
+                <p class="text-xl max-w-3xl mx-auto mb-8">
+                    Bridging ancient wisdom with modern wellness. We're dedicated to providing authentic traditional medicine 
+                    and holistic healing solutions for better health and well-being.
+                </p>
+                
+                <!-- Mission Statement Card -->
+                <div class="max-w-4xl mx-auto mt-12 mb-8">
+                    <div class="bg-white/20 backdrop-blur-sm rounded-3xl p-8 hover:bg-white/30 transition-all duration-300 transform hover:scale-105">
+                        <div class="text-center">
+                            <div class="text-6xl mb-6">🌿</div>
+                            <h3 class="font-lora text-2xl md:text-3xl font-medium text-white mb-6">
+                                Our Mission
+                            </h3>
+                            <p class="text-lg text-green-100 leading-relaxed mb-6">
+                                To preserve and share the healing wisdom of traditional medicine, making natural wellness 
+                                accessible to modern families while honoring our cultural heritage.
+                            </p>
+                            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-sm text-green-100">
+                                <div>
+                                    <div class="text-2xl mb-2">🏥</div>
+                                    <p>Holistic Healing</p>
+                                </div>
+                                <div>
+                                    <div class="text-2xl mb-2">🌍</div>
+                                    <p>Cultural Heritage</p>
+                                </div>
+                                <div>
+                                    <div class="text-2xl mb-2">💪</div>
+                                    <p>Natural Wellness</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- CTA Buttons -->
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="#our-story" class="btn-primary text-lg px-8 py-4" style="border-radius: 2rem !important; background: linear-gradient(135deg, #4CAF50, #6FBF73) !important; color: white !important; padding: 1rem 2.5rem !important; font-weight: 600 !important; font-size: 1rem !important; text-decoration: none !important; border: none !important; cursor: pointer !important; box-shadow: 0 4px 15px rgba(76, 175, 80, 0.3) !important; transition: all 0.3s ease !important; display: inline-block !important; text-align: center !important;">Our Story</a>
+                    <a href="consultations.html" class="btn-secondary text-lg px-8 py-4" style="border-radius: 2rem !important; background: transparent !important; color: white !important; border: 2px solid white !important; font-weight: 600 !important; font-size: 1rem !important; text-decoration: none !important; cursor: pointer !important; transition: all 0.3s ease !important; display: inline-block !important; text-align: center !important;">Book Consultation</a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Scroll Indicator -->
+        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2">
+            <div class="scroll-indicator"></div>
+        </div>
+    </section>
+
+    <!-- Our Story -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="font-lora text-3xl md:text-4xl font-bold text-green-800 mb-6">
+                        Our Story
+                    </h2>
+                    <p class="text-lg text-gray-600 mb-6 leading-relaxed">
+                        Maingrace247 was founded with a simple yet powerful mission: to make traditional herbal medicine 
+                        accessible to everyone while preserving the ancient wisdom passed down through generations.
+                    </p>
+                    <p class="text-lg text-gray-600 mb-6 leading-relaxed">
+                        Our journey began in the heart of Kenya, where traditional healing practices have been a cornerstone 
+                        of community health for centuries. We recognized the need to bridge the gap between these time-tested 
+                        remedies and modern wellness needs.
+                    </p>
+                    <p class="text-lg text-gray-600 leading-relaxed">
+                        Today, we continue to honor our roots while embracing innovation, ensuring that every product and 
+                        service we offer maintains the highest standards of quality, authenticity, and effectiveness.
+                    </p>
+                </div>
+                <div class="relative">
+                    <div class="bg-white p-4 rounded-2xl shadow-2xl">
+                        <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" alt="Traditional healing practices" class="w-full h-96 object-cover rounded-xl">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CEO Message -->
+    <section class="py-20 bg-gradient-to-br from-green-50 to-emerald-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <!-- CEO Image -->
+                <div class="relative">
+                    <div class="bg-white p-6 rounded-3xl shadow-2xl transform rotate-2 hover:rotate-0 transition-transform duration-500">
+                        <img src="images/DR-GRACE-MAINGRACE-removebg-preview.png" alt="Dr. Grace Maina - CEO & Founder" class="w-full h-[32rem] md:h-[36rem] object-contain rounded-2xl">
+                    </div>
+                    <!-- Floating Elements -->
+                    <div class="absolute -top-4 -right-4 w-20 h-20 bg-green-200 rounded-full opacity-60 animate-pulse"></div>
+                    <div class="absolute -bottom-4 -left-4 w-16 h-16 bg-emerald-200 rounded-full opacity-60 animate-pulse delay-1000"></div>
+                </div>
+                
+                <!-- CEO Message -->
+                <div class="space-y-8">
+                    <div class="space-y-4">
+                        <div class="flex items-center space-x-4">
+                            <span class="px-4 py-2 bg-green-100 text-green-700 rounded-full text-sm font-medium">Tradomedical Doctor & Founder</span>
+                            <span class="text-gray-500 text-sm">Maingrace Tradomedical Services</span>
+                        </div>
+                        <h2 class="font-lora text-4xl md:text-5xl font-bold text-green-800">
+                            Dr. (Mrs.) Janet F. Adetifa
+                        </h2>
+                        <p class="text-xl text-green-600 font-medium">
+                            A Healer by Calling, Not Just by Profession
+                        </p>
+                    </div>
+                    
+                    <div class="space-y-6">
+                        <p class="text-lg text-gray-700 leading-relaxed">
+                            Dr. (Mrs.) Adetifa Folashade is a passionate and deeply committed tradomedical doctor based in Nigeria, known for her exceptional skill in harnessing the healing powers of nature through ancient roots, leaves, and herbal formulations. With a strong foundation in traditional African medicine and a modern understanding of wellness, she has become a trusted name in holistic healing — treating people of all ages and genders safely, naturally, and effectively.
+                        </p>
+                        <p class="text-lg text-gray-700 leading-relaxed">
+                            From life and destiny trip, Dr. Adetifa Folashade was drawn to the wisdom of herbal healing passed down through generations. Inspired by her roots and fueled by a desire to serve humanity, she dedicated her life to preserving and advancing the rich legacy of African traditional medicine. Through years of rigorous training, field research, and mentorship under renowned herbal masters, she built a robust knowledge base of the curative powers of nature.
+                        </p>
+                    </div>
+                    
+                    <!-- Credentials -->
+                    <div class="grid grid-cols-2 gap-4 pt-6">
+                        <div class="bg-white p-4 rounded-xl shadow-lg">
+                            <div class="text-2xl mb-2">🎓</div>
+                            <h4 class="font-semibold text-green-800">Education</h4>
+                            <p class="text-sm text-gray-600">Traditional African Medicine & Herbalism</p>
+                        </div>
+                        <div class="bg-white p-4 rounded-xl shadow-lg">
+                            <div class="text-2xl mb-2">⏰</div>
+                            <h4 class="font-semibold text-green-800">Experience</h4>
+                            <p class="text-sm text-gray-600">Years of Practice & Research</p>
+                        </div>
+                    </div>
+                    
+                    <!-- CTA -->
+                    <div class="pt-6">
+                        <a href="consultations.html" class="btn-primary text-lg px-8 py-4 inline-block" style="border-radius: 2rem !important; background: linear-gradient(135deg, #4CAF50, #6FBF73) !important; color: white !important; padding: 1rem 2.5rem !important; font-weight: 600 !important; font-size: 1rem !important; text-decoration: none !important; border: none !important; cursor: pointer !important; box-shadow: 0 4px 15px rgba(76, 175, 80, 0.3) !important; transition: all 0.3s ease !important; display: inline-block !important; text-align: center !important;">
+                            Book a Consultation with Dr. Adetifa
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission & Vision -->
+    <section class="py-16 bg-green-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-12">
+                <!-- Mission -->
+                <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-2">
+                    <div class="h-48 bg-green-100 rounded-xl mb-6 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" alt="Our Mission" class="w-full h-full object-cover">
+                    </div>
+                    <div class="text-4xl mb-4">🎯</div>
+                    <h3 class="font-lora text-2xl font-semibold text-green-800 mb-4">Our Mission</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        To provide accessible, high-quality traditional herbal medicine and holistic wellness solutions 
+                        that promote natural healing and improve the overall well-being of our community. We strive to 
+                        preserve and share the wisdom of traditional healing while adapting it to meet modern health needs.
+                    </p>
+                </div>
+
+                <!-- Vision -->
+                <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-2">
+                    <div class="h-48 bg-green-100 rounded-xl mb-6 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1544787219-7f47ccb76574?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" alt="Our Vision" class="w-full h-full object-cover">
+                    </div>
+                    <div class="text-4xl mb-4">👁️</div>
+                    <h3 class="font-lora text-2xl font-semibold text-green-800 mb-4">Our Vision</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        To become the leading provider of traditional medicine and holistic wellness in East Africa, 
+                        recognized for our commitment to quality, authenticity, and the well-being of our clients. 
+                        We envision a world where traditional and modern medicine work together for optimal health.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Values -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="font-lora text-3xl md:text-4xl font-bold text-green-800 mb-6">
+                    Our Core Values
+                </h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                    These principles guide everything we do, from sourcing ingredients to serving our clients.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="text-center p-6 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <div class="text-4xl mb-4">🌱</div>
+                    <h3 class="font-lora text-xl font-semibold text-green-800 mb-2">Authenticity</h3>
+                    <p class="text-gray-600">Preserving traditional methods and recipes passed down through generations</p>
+                </div>
+                <div class="text-center p-6 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <div class="text-4xl mb-4">💚</div>
+                    <h3 class="font-lora text-xl font-semibold text-green-800 mb-2">Quality</h3>
+                    <p class="text-gray-600">Using only the finest natural ingredients and maintaining rigorous standards</p>
+                </div>
+                <div class="text-center p-6 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <div class="text-4xl mb-4">🤝</div>
+                    <h3 class="font-lora text-xl font-semibold text-green-800 mb-2">Community</h3>
+                    <p class="text-gray-600">Supporting local farmers and contributing to community health and wellness</p>
+                </div>
+                <div class="text-center p-6 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <div class="text-4xl mb-4">🔬</div>
+                    <h3 class="font-lora text-xl font-semibold text-green-800 mb-2">Innovation</h3>
+                    <p class="text-gray-600">Combining traditional wisdom with modern research and technology</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Team -->
+    <section class="py-16 bg-green-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="font-lora text-3xl md:text-4xl font-bold text-green-800 mb-6">
+                    Meet Our Team
+                </h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                    Our experienced team of herbalists and wellness experts are dedicated to your health and well-being.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Team Member 1 -->
+                <div class="bg-white p-8 rounded-2xl shadow-lg text-center hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-2">
+                    <div class="w-32 h-32 bg-green-100 rounded-full mx-auto mb-6 flex items-center justify-center overflow-hidden">
+                        <img src="images/DR-GRACE-MAINGRACE-removebg-preview.png" alt="Dr. Grace Maina" class="w-full h-full object-contain rounded-full">
+                    </div>
+                    <h3 class="font-lora text-xl font-semibold text-green-800 mb-2">Dr. Grace Maina</h3>
+                    <p class="text-green-600 mb-4">CEO</p>
+                    <p class="text-gray-600">
+                        With over 15 years of experience in traditional medicine, Dr. Grace leads our team with expertise 
+                        in herbal formulations and holistic healing practices.
+                    </p>
+                </div>
+
+                <!-- Team Member 2 -->
+                <div class="bg-white p-8 rounded-2xl shadow-lg text-center hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-2">
+                    <div class="w-32 h-32 bg-green-100 rounded-full mx-auto mb-6 flex items-center justify-center overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" alt="Sarah Wanjiku" class="w-full h-full object-cover rounded-full">
+                    </div>
+                    <h3 class="font-lora text-xl font-semibold text-green-800 mb-2">Sarah Wanjiku</h3>
+                    <p class="text-green-600 mb-4">Wellness Consultant</p>
+                    <p class="text-gray-600">
+                        Sarah specializes in lifestyle medicine and helps clients integrate traditional remedies with 
+                        modern wellness practices for optimal health outcomes.
+                    </p>
+                </div>
+
+                <!-- Team Member 3 -->
+                <div class="bg-white p-8 rounded-2xl shadow-lg text-center hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-2">
+                    <div class="w-32 h-32 bg-green-100 rounded-full mx-auto mb-6 flex items-center justify-center overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" alt="James Kiprop" class="w-full h-full object-cover rounded-full">
+                    </div>
+                    <h3 class="font-lora text-xl font-semibold text-green-800 mb-2">James Kiprop</h3>
+                    <p class="text-green-600 mb-4">Quality Assurance Specialist</p>
+                    <p class="text-gray-600">
+                        James ensures all our herbal products meet the highest quality standards through rigorous 
+                        testing and quality control processes.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="font-lora text-3xl md:text-4xl font-bold text-green-800 mb-6">
+                    Why Choose Maingrace247?
+                </h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                    Our unique approach combines traditional wisdom with modern understanding for the best health outcomes.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-green-50 p-8 rounded-2xl">
+                    <div class="text-4xl mb-4">🏆</div>
+                    <h3 class="font-lora text-xl font-semibold text-green-800 mb-2">Proven Results</h3>
+                    <p class="text-gray-600">Thousands of satisfied clients with improved health outcomes and testimonials</p>
+                </div>
+                <div class="bg-green-50 p-8 rounded-2xl">
+                    <div class="text-4xl mb-4">🌿</div>
+                    <h3 class="font-lora text-xl font-semibold text-green-800 mb-2">Natural Ingredients</h3>
+                    <p class="text-gray-600">All our products use pure, natural ingredients sourced from trusted local farmers</p>
+                </div>
+                <div class="bg-green-50 p-8 rounded-2xl">
+                    <div class="text-4xl mb-4">👨‍⚕️</div>
+                    <h3 class="font-lora text-xl font-semibold text-green-800 mb-2">Expert Guidance</h3>
+                    <p class="text-gray-600">Personalized consultations with experienced herbalists and wellness experts</p>
+                </div>
+                <div class="bg-green-50 p-8 rounded-2xl">
+                    <div class="text-4xl mb-4">💚</div>
+                    <h3 class="font-lora text-xl font-semibold text-green-800 mb-2">Holistic Approach</h3>
+                    <p class="text-gray-600">We treat the whole person - mind, body, and spirit - not just symptoms</p>
+                </div>
+                <div class="bg-green-50 p-8 rounded-2xl">
+                    <div class="text-4xl mb-4">🔬</div>
+                    <h3 class="font-lora text-xl font-semibold text-green-800 mb-2">Quality Assured</h3>
+                    <p class="text-gray-600">Rigorous quality control and testing ensure the highest standards</p>
+                </div>
+                <div class="bg-green-50 p-8 rounded-2xl">
+                    <div class="text-4xl mb-4">🤝</div>
+                    <h3 class="font-lora text-xl font-semibold text-green-800 mb-2">Community Focused</h3>
+                    <p class="text-gray-600">Supporting local communities and preserving traditional knowledge</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-gradient-to-br from-green-500 to-green-600 text-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="font-lora text-3xl md:text-4xl font-bold mb-6">
+                Ready to Experience Traditional Healing?
+            </h2>
+            <p class="text-xl mb-8">
+                Join thousands of satisfied clients who have discovered the power of traditional medicine and holistic wellness.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="consultations.html" class="btn-primary" style="border-radius: 2rem !important; background: linear-gradient(135deg, #4CAF50, #6FBF73) !important; color: white !important; padding: 1rem 2.5rem !important; font-weight: 600 !important; font-size: 1rem !important; text-decoration: none !important; border: none !important; cursor: pointer !important; box-shadow: 0 4px 15px rgba(76, 175, 80, 0.3) !important; transition: all 0.3s ease !important; display: inline-block !important; text-align: center !important;">Book Consultation</a>
+                <a href="contact.html" class="btn-secondary" style="border-radius: 2rem !important; background: linear-gradient(135deg, #4CAF50, #6FBF73) !important; color: white !important; padding: 1rem 2.5rem !important; font-weight: 600 !important; font-size: 1rem !important; text-decoration: none !important; border: none !important; cursor: pointer !important; box-shadow: 0 4px 15px rgba(76, 175, 80, 0.3) !important; transition: all 0.3s ease !important; display: inline-block !important; text-align: center !important;">Contact Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <!-- Company Info -->
+                <div class="space-y-4">
+                    <div class="flex items-center space-x-2">
+                        <img src="images/MAINGRACE-LOGO.webp" alt="Maingrace247 Logo" class="h-8 w-auto">
+                        <span class="font-lora text-lg font-semibold">Maingrace247</span>
+                    </div>
+                    <p class="text-gray-300">
+                        Traditional healing for modern wellness. Expert herbal medicine and holistic health solutions.
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="space-y-4">
+                    <h3 class="font-lora text-lg font-semibold">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-300 hover:text-green-400 transition-colors">Home</a></li>
+                        <li><a href="about.html" class="text-gray-300 hover:text-green-400 transition-colors">About Us</a></li>
+                        <li><a href="services.html" class="text-gray-300 hover:text-green-400 transition-colors">Services</a></li>
+                        <li><a href="products.html" class="text-gray-300 hover:text-green-400 transition-colors">Products</a></li>
+                        <li><a href="blog.html" class="text-gray-300 hover:text-green-400 transition-colors">Blog</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services -->
+                <div class="space-y-4">
+                    <h3 class="font-lora text-lg font-semibold">Services</h3>
+                    <ul class="space-y-2">
+                        <li><a href="consultations.html" class="text-gray-300 hover:text-green-400 transition-colors">Consultations</a></li>
+                        <li><a href="services.html" class="text-gray-300 hover:text-green-400 transition-colors">Herbal Remedies</a></li>
+                        <li><a href="services.html" class="text-gray-300 hover:text-green-400 transition-colors">Wellness Programs</a></li>
+                        <li><a href="services.html" class="text-gray-300 hover:text-green-400 transition-colors">Detox & Cleansing</a></li>
+                        <li><a href="services.html" class="text-gray-300 hover:text-green-400 transition-colors">Immune Support</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="space-y-4">
+                    <h3 class="font-lora text-lg font-semibold">Contact</h3>
+                    <div class="space-y-2">
+                        <p class="text-gray-300">📍 Nairobi, Kenya</p>
+                        <p class="text-gray-300">📞 +254 700 123 456</p>
+                        <p class="text-gray-300">✉️ info@maingrace247.com</p>
+                    </div>
+                    <div class="pt-4">
+                        <a href="contact.html" class="btn-primary" style="border-radius: 2rem !important; background: linear-gradient(135deg, #4CAF50, #6FBF73) !important; color: white !important; padding: 1rem 2.5rem !important; font-weight: 600 !important; font-size: 1rem !important; text-decoration: none !important; border: none !important; cursor: pointer !important; box-shadow: 0 4px 15px rgba(76, 175, 80, 0.3) !important; transition: all 0.3s ease !important; display: inline-block !important; text-align: center !important;">Get in Touch</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom Footer -->
+            <div class="border-t border-gray-800 mt-12 pt-8">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <p class="text-gray-400 text-sm">
+                        © 2025 Maingrace247 Tradomedical Service. All rights reserved.
+                    </p>
+                    <div class="flex space-x-6 mt-4 md:mt-0">
+                        <a href="privacy-policy.html" class="text-gray-400 hover:text-green-400 text-sm transition-colors">Privacy Policy</a>
+                        <a href="terms-of-service.html" class="text-gray-400 hover:text-green-400 text-sm transition-colors">Terms of Service</a>
+                        <a href="medical-disclaimer.html" class="text-gray-400 hover:text-green-400 text-sm transition-colors">Medical Disclaimer</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+    <script src="js/cursor.js"></script>
+</body>
+</html> 

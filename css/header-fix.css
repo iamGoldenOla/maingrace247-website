@@ -1,0 +1,228 @@
+/* Maingrace247 - Header Visibility Fix */
+
+/* Header Fix - Updated for better design */
+:root {
+    --header-bg: rgba(255, 255, 255, 0.95);
+    --header-border: #4CAF50;
+    --nav-text: #1f2937;
+    --nav-hover: #4CAF50;
+    --nav-active: #4CAF50;
+    --btn-primary: #4CAF50;
+    --btn-hover: #45a049;
+}
+
+/* Fixed Navigation Header */
+nav.fixed {
+    background: var(--header-bg) !important;
+    backdrop-filter: blur(10px) !important;
+    border-bottom: 2px solid var(--header-border) !important;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Logo styling - show text logo */
+nav .flex-shrink-0 a {
+    display: flex !important;
+    align-items: center !important;
+    text-decoration: none !important;
+}
+
+nav .flex-shrink-0 img {
+    height: 40px !important;
+    width: auto !important;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1)) !important;
+}
+
+/* Show the text logo */
+nav .flex-shrink-0 span {
+    display: block !important;
+    color: var(--nav-text) !important;
+    font-weight: 600 !important;
+}
+
+/* Desktop Navigation - reduce spacing significantly */
+nav .hidden.md\\:block .ml-10 {
+    margin-left: 1rem !important;
+}
+
+nav .hidden.md\\:block .space-x-8 > * + * {
+    margin-left: 0.5rem !important;
+}
+
+/* Navigation Links */
+.nav-link {
+    color: var(--nav-text) !important;
+    font-weight: 500 !important;
+    text-decoration: none !important;
+    padding: 0.375rem 0.375rem !important;
+    border-radius: 0.5rem !important;
+    transition: all 0.3s ease !important;
+    position: relative !important;
+    font-size: 0.85rem !important;
+}
+
+.nav-link:hover {
+    color: var(--nav-hover) !important;
+    background-color: rgba(76, 175, 80, 0.1) !important;
+    transform: translateY(-1px) !important;
+}
+
+.nav-link.active {
+    color: var(--nav-active) !important;
+    background-color: rgba(76, 175, 80, 0.15) !important;
+    font-weight: 600 !important;
+}
+
+/* Consultation Button - make smaller */
+.btn-primary {
+    background: var(--btn-primary) !important;
+    color: white !important;
+    padding: 0.375rem 0.75rem !important;
+    border-radius: 0.5rem !important;
+    font-weight: 500 !important;
+    text-decoration: none !important;
+    transition: all 0.3s ease !important;
+    border: none !important;
+    font-size: 0.8rem !important;
+    line-height: 1.25rem !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    box-shadow: 0 2px 8px rgba(76, 175, 80, 0.3) !important;
+    margin-left: 0.5rem !important;
+}
+
+.btn-primary:hover {
+    background: var(--btn-hover) !important;
+    transform: translateY(-1px) !important;
+    box-shadow: 0 4px 12px rgba(76, 175, 80, 0.4) !important;
+}
+
+/* Mobile Navigation */
+.mobile-nav-link {
+    color: var(--nav-text) !important;
+    font-weight: 500 !important;
+    text-decoration: none !important;
+    padding: 0.75rem 1rem !important;
+    border-radius: 0.5rem !important;
+    transition: all 0.3s ease !important;
+    display: block !important;
+    margin: 0.25rem 0 !important;
+}
+
+.mobile-nav-link:hover {
+    color: var(--nav-hover) !important;
+    background-color: rgba(76, 175, 80, 0.1) !important;
+}
+
+.mobile-nav-link.active {
+    color: var(--nav-active) !important;
+    background-color: rgba(76, 175, 80, 0.15) !important;
+    font-weight: 600 !important;
+}
+
+/* Mobile Menu Button */
+#mobile-menu-btn {
+    color: var(--nav-text) !important;
+    background: transparent !important;
+    border: none !important;
+    padding: 0.5rem !important;
+    border-radius: 0.375rem !important;
+    transition: all 0.3s ease !important;
+}
+
+#mobile-menu-btn:hover {
+    background-color: rgba(76, 175, 80, 0.1) !important;
+    color: var(--nav-hover) !important;
+}
+
+/* Mobile Menu */
+#mobile-menu {
+    background: var(--header-bg) !important;
+    backdrop-filter: blur(10px) !important;
+    border-bottom: 2px solid var(--header-border) !important;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    nav .flex-shrink-0 img {
+        height: 35px !important;
+    }
+    
+    .btn-primary {
+        padding: 0.375rem 0.75rem !important;
+        font-size: 0.8rem !important;
+    }
+}
+
+/* Ensure proper contrast for all navigation elements */
+nav * {
+    color: inherit !important;
+}
+
+/* Fix any remaining visibility issues */
+nav a:not(.btn-primary) {
+    color: #1F2937 !important;
+}
+
+nav a:not(.btn-primary):hover {
+    color: #4CAF50 !important;
+}
+
+/* Logo specific styling */
+nav .flex.items-center.space-x-2 span {
+    color: #4CAF50 !important;
+    font-weight: 600 !important;
+}
+
+/* Mobile menu toggle visibility */
+.md\:hidden button {
+    color: #4CAF50 !important;
+    background: none !important;
+    border: none !important;
+    padding: 0.5rem !important;
+    border-radius: 0.5rem !important;
+    transition: all 0.3s ease !important;
+}
+
+.md\:hidden button:hover {
+    background-color: rgba(76, 175, 80, 0.1) !important;
+    transform: scale(1.1) !important;
+}
+
+/* Ensure mobile menu items are visible */
+#mobile-menu a {
+    color: #1F2937 !important;
+    font-weight: 500 !important;
+    padding: 0.75rem 1rem !important;
+    border-radius: 0.5rem !important;
+    transition: all 0.3s ease !important;
+    display: block !important;
+    text-decoration: none !important;
+}
+
+#mobile-menu a:hover {
+    color: #4CAF50 !important;
+    background-color: rgba(76, 175, 80, 0.1) !important;
+}
+
+/* Fix any remaining text color issues */
+nav .text-green-700 {
+    color: #4CAF50 !important;
+}
+
+nav .text-green-900 {
+    color: #2E7D32 !important;
+}
+
+/* Ensure proper z-index */
+nav {
+    z-index: 1000 !important;
+}
+
+/* Fix backdrop blur for better text readability */
+nav,
+#mobile-menu {
+    backdrop-filter: blur(20px) !important;
+    -webkit-backdrop-filter: blur(20px) !important;
+} 

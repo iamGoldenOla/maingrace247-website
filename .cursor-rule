@@ -1,0 +1,199 @@
+# Maingrace247 Tradomedical Service - AI Assistant Rules
+
+## Project Context
+You are working on the Maingrace247 Tradomedical Service website - a professional tradomedical service focused on holistic health using traditional herbal remedies and natural healing.
+
+## Core Brand Identity
+- **Brand**: Maingrace247 Tradomedical Service
+- **Focus**: Natural healing, herbal remedies, holistic wellness
+- **Philosophy**: Earthy wellness, calming, nature-inspired
+- **Colors**: Primary Green (#4CAF50), Secondary Green (#6FBF73), Earthy tones
+- **Tone**: Professional, trustworthy, calming, knowledgeable about traditional medicine
+
+## Design Philosophy - HUMAN GENERATED APPEARANCE
+**CRITICAL**: This website must look human-designed, NOT AI-generated. Use sophisticated design techniques:
+
+### Modern Design Layers & Layouts
+- **Bento Grid Layouts**: Implement bento-style card layouts for services, testimonials, and products
+- **Layered Design**: Use multiple visual layers with depth (background, mid-ground, foreground)
+- **Glassmorphism**: Subtle glass effects on cards and modals
+- **Neumorphism**: Soft, realistic button and card designs
+- **Card-based Design**: Modular, organized content in visually appealing cards
+- **Asymmetrical Layouts**: Avoid perfect symmetry - use organic, natural arrangements
+
+### 3D Effects & Depth
+- **Subtle 3D Shadows**: Realistic drop shadows with proper depth
+- **Hover Transformations**: 3D rotations, scaling, and perspective changes
+- **Parallax Effects**: Subtle background parallax for depth
+- **3D Cards**: Cards with realistic depth and hover effects
+- **Layered Backgrounds**: Multiple background layers for depth
+- **CSS 3D Transforms**: Use transform3d, perspective, rotateX/Y/Z
+
+### Visual Sophistication
+- **Organic Shapes**: Use SVG shapes, curved dividers, natural flow
+- **Texture Overlays**: Subtle grain, paper textures, natural patterns
+- **Gradient Sophistication**: Multi-stop gradients, radial gradients
+- **Micro-interactions**: Subtle animations that feel human-crafted
+- **Typography Hierarchy**: Varied font weights, sizes, and spacing
+- **Color Depth**: Multiple shades and tints of brand colors
+
+## Technology Requirements
+- **Primary Stack**: HTML5, CSS3, JavaScript, JSON
+- **Framework**: React (where necessary for interactive components)
+- **Styling**: TailwindCSS as default
+- **Images**: ALL images must be in .webp format with lazy loading
+- **Responsive**: Mobile-first approach
+- **3D Libraries**: Consider Three.js for advanced 3D effects if needed
+
+## Custom Cursor Implementation
+- **Default**: Leaf/herb icon in Maingrace green (#4CAF50)
+- **Hover**: Hand icon in lighter green (#6FBF73) for interactive elements
+- **Behavior**: Smooth transitions, subtle animations, non-distracting
+- **Files**: leaf-cursor.webp, hand-cursor.webp
+
+## Content Guidelines
+- **NO lorem ipsum** - Generate real content about herbal medicine, wellness, tradomedical services
+- **Professional medical tone** - Calming, trustworthy, knowledgeable
+- **Accessible language** - Medical terminology with lay explanations
+- **Cultural sensitivity** - Respectful representation of traditional medicine
+
+## Essential Website Sections
+1. Homepage (hero, services overview)
+2. About (philosophy, credentials)
+3. Services (consultation types, herbal remedies)
+4. Products (if applicable - herbal products)
+5. Consultations (booking system)
+6. Blog/Resources (wellness education)
+7. Contact (location, booking)
+8. Testimonials (client success stories)
+
+## Design Implementation Guidelines
+
+### Layout Structure
+- **Hero Section**: Large, impactful with 3D elements and layered backgrounds
+- **Services Grid**: Bento-style layout with varying card sizes
+- **Testimonials**: Carousel with 3D card effects
+- **Product Showcase**: Grid with hover transformations
+- **Contact Section**: Interactive form with depth and shadows
+
+### Interactive Elements
+- **Buttons**: Neumorphic design with realistic shadows
+- **Cards**: 3D hover effects with perspective changes
+- **Navigation**: Smooth transitions with depth indicators
+- **Forms**: Layered input fields with focus states
+- **Modals**: Glassmorphism effects with backdrop blur
+
+### Animation Philosophy
+- **Subtle & Purposeful**: Every animation serves a purpose
+- **Easing Functions**: Use custom cubic-bezier curves
+- **Staggered Animations**: Elements animate in sequence, not simultaneously
+- **Hover States**: Realistic feedback with depth changes
+- **Loading States**: Sophisticated skeleton screens and progress indicators
+
+## Code Standards
+- **Naming**: camelCase (functions/variables), kebab-case (files/folders), PascalCase (components)
+- **Comments**: Clear section comments (<!-- HERO SECTION -->)
+- **Equality**: Use strict equality (===)
+- **Structure**: Modular, organized, lean code
+- **Accessibility**: ARIA labels, keyboard navigation, readable contrast
+- **CSS Organization**: Logical grouping of styles, custom properties for design tokens
+
+## Image Requirements
+- **Format**: ALL images must be .webp
+- **Compression**: 80-85% photos, 90-95% graphics
+- **Sizes**: Responsive (320px, 640px, 1024px, 1920px)
+- **Loading**: Lazy loading on all images
+- **Alt text**: Descriptive for accessibility
+- **Placement**: Strategic use of images to enhance 3D effects and depth
+
+## Performance Standards
+- Minified CSS/JS
+- Optimized images
+- Lazy loading
+- Core Web Vitals optimization
+- Cross-browser compatibility
+- Mobile-first responsive design
+- Smooth 60fps animations
+
+## Legal & Compliance
+- Medical disclaimers required
+- HIPAA compliance if handling patient data
+- Privacy policy, terms of service
+- WCAG 2.1 AA accessibility
+- Image licensing/permissions
+
+## Interactive Features
+- Consultation booking system
+- Product catalog (if applicable)
+- Contact forms
+- Testimonial display
+- Blog/resource center
+
+## File Structure
+```
+maingrace247-website/
+├── index.html
+├── css/
+│   ├── style.css
+│   ├── tailwind.css
+│   ├── cursor.css
+│   ├── animations.css
+│   └── 3d-effects.css
+├── js/
+│   ├── main.js
+│   ├── cursor.js
+│   ├── booking.js
+│   ├── animations.js
+│   └── 3d-effects.js
+├── react-components/
+│   ├── BookingForm.jsx
+│   ├── ProductCatalog.jsx
+│   ├── TestimonialSlider.jsx
+│   └── BentoGrid.jsx
+├── images/ (all .webp format)
+├── data/ (services.json, products.json, testimonials.json)
+├── robots.txt
+├── sitemap.xml
+└── README.md
+```
+
+## Pre-Development Questions
+Always ask before starting:
+1. Specific tradomedical services to feature?
+2. E-commerce component needed?
+3. Consultation types (online/in-person)?
+4. Target audience demographics?
+5. Content strategy preferences?
+6. Booking system preferences?
+7. Payment integration needed?
+8. Legal requirements?
+9. Footer credits permission?
+10. Available image assets?
+11. Preferred design style (minimalist, bold, organic)?
+12. 3D effect intensity preferences?
+
+## Key Reminders
+- **CRITICAL**: Design must look human-generated, not AI-generated
+- Use bento layouts and layered design for sophistication
+- Implement 3D effects and depth for modern appeal
+- Always use .webp for images
+- Generate real, contextual content
+- Maintain professional medical standards
+- Respect traditional medicine practices
+- Ensure accessibility compliance
+- Test on multiple devices/browsers
+- Optimize for performance
+- Keep code modular and organized
+- Use organic, asymmetrical layouts
+- Implement subtle, purposeful animations
+
+## Brand Voice
+Professional yet approachable, knowledgeable about traditional healing, calming and trustworthy, focused on natural wellness and holistic health approaches.
+
+## Design Inspiration Keywords
+- Modern medical websites
+- Wellness spa aesthetics
+- Organic design systems
+- Sophisticated e-commerce
+- Premium service websites
+- Natural healing aesthetics 

@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Consultation - Maingrace247</title>
+    <meta name="description" content="Book your personalized consultation with Maingrace247's expert herbalists for traditional medicine and holistic wellness.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- TailwindCSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header-fix.css">
+    <link rel="stylesheet" href="css/cursor.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/webp" href="images/MAINGRACE-LOGO.webp">
+</head>
+<body class="font-inter bg-gradient-to-br from-green-50 to-white">
+    <!-- Custom Cursor -->
+    <div id="custom-cursor" class="custom-cursor"></div>
+    <div id="cursor-trail" class="cursor-trail"></div>
+    
+    <!-- Navigation - FIXED HEADER -->
+    <nav class="fixed top-0 w-full z-40">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex-shrink-0">
+                    <a href="index.html" class="flex items-center space-x-2">
+                        <span class="text-xl font-lora font-semibold">Maingrace247</span>
+                    </a>
+                </div>
+                
+                <!-- Right Side Navigation and CTA -->
+                <div class="hidden md:flex items-center space-x-4">
+                    <!-- Desktop Navigation -->
+                    <div class="flex items-baseline space-x-4">
+                        <a href="index.html" class="nav-link">Home</a>
+                        <a href="about.html" class="nav-link">About</a>
+                        <a href="services.html" class="nav-link">Services</a>
+                        <a href="products.html" class="nav-link">Products</a>
+                        <a href="consultations.html" class="nav-link active">Consultations</a>
+                        <a href="blog.html" class="nav-link">Blog</a>
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </div>
+                    
+                    <!-- CTA Button -->
+                    <a href="consultations.html" class="btn-primary" style="border-radius: 2rem !important; background: linear-gradient(135deg, #4CAF50, #6FBF73) !important; color: white !important; padding: 1rem 2.5rem !important; font-weight: 600 !important; font-size: 1rem !important; text-decoration: none !important; border: none !important; cursor: pointer !important; box-shadow: 0 4px 15px rgba(76, 175, 80, 0.3) !important; transition: all 0.3s ease !important; display: inline-block !important; text-align: center !important;">Book Consultation</a>
+                </div>
+                
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="p-2 rounded-md">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile Navigation -->
+        <div id="mobile-menu" class="hidden md:hidden">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="index.html" class="mobile-nav-link">Home</a>
+                <a href="about.html" class="mobile-nav-link">About</a>
+                <a href="services.html" class="mobile-nav-link">Services</a>
+                <a href="products.html" class="mobile-nav-link">Products</a>
+                <a href="consultations.html" class="mobile-nav-link active">Consultations</a>
+                <a href="blog.html" class="mobile-nav-link">Blog</a>
+                <a href="contact.html" class="mobile-nav-link">Contact</a>
+                <a href="consultations.html" class="btn-primary w-full mt-4" style="border-radius: 2rem !important; background: linear-gradient(135deg, #4CAF50, #6FBF73) !important; color: white !important; padding: 1rem 2.5rem !important; font-weight: 600 !important; font-size: 1rem !important; text-decoration: none !important; border: none !important; cursor: pointer !important; box-shadow: 0 4px 15px rgba(76, 175, 80, 0.3) !important; transition: all 0.3s ease !important; display: inline-block !important; text-align: center !important;">Book Consultation</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="relative min-h-[60vh] flex items-center justify-center overflow-hidden pt-24 pb-16" style="background-image: url('https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+        <div class="absolute inset-0 bg-emerald-900/30"></div>
+        <!-- Floating Elements -->
+        <div class="absolute top-20 left-10 floating-leaf">🌿</div>
+        <div class="absolute top-40 right-20 floating-leaf">🍃</div>
+        <div class="absolute bottom-40 left-20 floating-leaf">🌱</div>
+        <div class="absolute top-60 left-1/4 floating-leaf">🌿</div>
+        <div class="absolute bottom-60 right-1/4 floating-leaf">🍃</div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center">
+                <nav class="flex items-center justify-center gap-2 mb-6 text-green-100">
+                    <a href="index.html" class="hover:text-white transition-colors">Home</a>
+                    <span>/</span>
+                    <span>Consultations</span>
+                </nav>
+                <h1 class="font-lora text-4xl md:text-6xl font-bold mb-6">
+                    Book Your Consultation
+                </h1>
+                <p class="text-xl max-w-3xl mx-auto mb-8">
+                    Start your journey to natural wellness with a personalized consultation from our expert herbalists. 
+                    Get tailored recommendations for your unique health needs.
+                </p>
+                
+                <!-- Inspirational Quote Card -->
+                <div class="max-w-4xl mx-auto mt-12 mb-8">
+                    <div class="bg-white/20 backdrop-blur-sm rounded-3xl p-8 hover:bg-white/30 transition-all duration-300 transform hover:scale-105">
+                        <div class="text-center">
+                            <div class="text-6xl mb-6">🌿</div>
+                            <blockquote class="font-lora text-2xl md:text-3xl font-medium text-white mb-6 leading-relaxed">
+                                "The greatest medicine of all is teaching people how not to need it."
+                            </blockquote>
+                            <p class="text-lg text-green-100 font-medium">- Traditional African Wisdom</p>
+                            <div class="mt-6 text-sm text-green-200">
+                                Discover the power of natural healing and preventive wellness through personalized guidance
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Benefits Preview -->
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto mb-8">
+                    <div class="text-center">
+                        <div class="text-2xl mb-2">🎯</div>
+                        <p class="text-sm text-green-100">Personalized Plans</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-2xl mb-2">🌿</div>
+                        <p class="text-sm text-green-100">Natural Remedies</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-2xl mb-2">👩‍⚕️</div>
+                        <p class="text-sm text-green-100">Expert Guidance</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-2xl mb-2">💚</div>
+                        <p class="text-sm text-green-100">Holistic Approach</p>
+                    </div>
+                </div>
+                
+                <!-- CTA Buttons -->
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="#booking-form" class="btn-primary text-lg px-8 py-4" style="border-radius: 2rem !important; background: linear-gradient(135deg, #4CAF50, #6FBF73) !important; color: white !important; padding: 1rem 2.5rem !important; font-weight: 600 !important; font-size: 1rem !important; text-decoration: none !important; border: none !important; cursor: pointer !important; box-shadow: 0 4px 15px rgba(76, 175, 80, 0.3) !important; transition: all 0.3s ease !important; display: inline-block !important; text-align: center !important;">Book Now</a>
+                    <a href="contact.html" class="btn-secondary text-lg px-8 py-4" style="border-radius: 2rem !important; background: transparent !important; color: white !important; border: 2px solid white !important; font-weight: 600 !important; font-size: 1rem !important; text-decoration: none !important; cursor: pointer !important; transition: all 0.3s ease !important; display: inline-block !important; text-align: center !important;">Contact Us</a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Scroll Indicator -->
+        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2">
+            <div class="scroll-indicator"></div>
+        </div>
+    </section>
+
+    <!-- Consultation Types -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="font-lora text-3xl md:text-4xl font-bold text-green-800 mb-6">
+                    Consultation Options
+                </h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                    Choose the consultation type that best fits your needs and schedule.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Initial Consultation -->
+                <div class="bg-green-50 p-8 rounded-2xl text-center hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-2">
+                    <div class="h-48 bg-green-100 rounded-xl mb-6 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" alt="Initial Consultation" class="w-full h-full object-cover">
+                    </div>
+                    <div class="text-4xl mb-4">👨‍⚕️</div>
+                    <h3 class="font-lora text-2xl font-semibold text-green-800 mb-4">Initial Consultation</h3>
+                    <p class="text-gray-600 mb-6">
+                        Comprehensive health assessment and personalized treatment plan development.
+                    </p>
+                    <ul class="text-left text-gray-600 mb-6 space-y-2">
+                        <li>• Health history review</li>
+                        <li>• Current symptoms assessment</li>
+                        <li>• Personalized treatment plan</li>
+                        <li>• Herbal remedy recommendations</li>
+                        <li>• Lifestyle guidance</li>
+                    </ul>
+                    <div class="text-3xl font-bold text-green-800 mb-4">$75</div>
+                    <p class="text-sm text-gray-500 mb-6">60 minutes</p>
+                    <button class="btn-primary w-full" onclick="selectConsultation('initial')">Select This Option</button>
+                </div>
+
+                <!-- Follow-up Consultation -->
+                <div class="bg-white border-2 border-green-200 p-8 rounded-2xl text-center hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-2">
+                    <div class="h-48 bg-green-100 rounded-xl mb-6 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" alt="Follow-up Consultation" class="w-full h-full object-cover">
+                    </div>
+                    <div class="text-4xl mb-4">🔄</div>
+                    <h3 class="font-lora text-2xl font-semibold text-green-800 mb-4">Follow-up Consultation</h3>
+                    <p class="text-gray-600 mb-6">
+                        Progress review and treatment plan adjustments for ongoing care.
+                    </p>
+                    <ul class="text-left text-gray-600 mb-6 space-y-2">
+                        <li>• Progress assessment</li>
+                        <li>• Treatment adjustments</li>
+                        <li>• New recommendations</li>
+                        <li>• Ongoing support</li>
+                        <li>• Wellness monitoring</li>
+                    </ul>
+                    <div class="text-3xl font-bold text-green-800 mb-4">$50</div>
+                    <p class="text-sm text-gray-500 mb-6">45 minutes</p>
+                    <button class="btn-primary w-full" onclick="selectConsultation('followup')">Select This Option</button>
+                </div>
+
+                <!-- Wellness Program -->
+                <div class="bg-green-50 p-8 rounded-2xl text-center hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-2">
+                    <div class="h-48 bg-green-100 rounded-xl mb-6 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" alt="Wellness Program" class="w-full h-full object-cover">
+                    </div>
+                    <div class="text-4xl mb-4">🧘‍♀️</div>
+                    <h3 class="font-lora text-2xl font-semibold text-green-800 mb-4">Wellness Program</h3>
+                    <p class="text-gray-600 mb-6">
+                        Comprehensive wellness program with ongoing support and guidance.
+                    </p>
+                    <ul class="text-left text-gray-600 mb-6 space-y-2">
+                        <li>• Initial consultation</li>
+                        <li>• 3 follow-up sessions</li>
+                        <li>• Wellness products included</li>
+                        <li>• Email support</li>
+                        <li>• Progress tracking</li>
+                    </ul>
+                    <div class="text-3xl font-bold text-green-800 mb-4">$150</div>
+                    <p class="text-sm text-gray-500 mb-6">3 months program</p>
+                    <button class="btn-primary w-full" onclick="selectConsultation('wellness')">Select This Option</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Form -->
+    <section class="py-16 bg-green-50">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-white rounded-2xl shadow-lg p-8">
+                <div class="text-center mb-8">
+                    <h2 class="font-lora text-3xl font-bold text-green-800 mb-4">
+                        Book Your Consultation
+                    </h2>
+                    <p class="text-gray-600">
+                        Fill out the form below to schedule your consultation. We'll get back to you within 24 hours.
+                    </p>
+                </div>
+
+                <form id="consultation-form" class="space-y-6">
+                    <!-- Consultation Type Selection -->
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">
+                            Consultation Type *
+                        </label>
+                        <select id="consultation-type" name="consultationType" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent text-black bg-white">
+                            <option value="" class="text-black">Select consultation type</option>
+                            <option value="initial" class="text-black">Initial Consultation - $75</option>
+                            <option value="followup" class="text-black">Follow-up Consultation - $50</option>
+                            <option value="wellness" class="text-black">Wellness Program - $150</option>
+                        </select>
+                    </div>
+
+                    <!-- Personal Information -->
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">
+                                First Name *
+                            </label>
+                            <input type="text" name="firstName" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent text-black bg-white placeholder-gray-500">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">
+                                Last Name *
+                            </label>
+                            <input type="text" name="lastName" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent text-black bg-white placeholder-gray-500">
+                        </div>
+                    </div>
+
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">
+                                Email *
+                            </label>
+                            <input type="email" name="email" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent text-black bg-white placeholder-gray-500">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">
+                                Phone Number *
+                            </label>
+                            <input type="tel" name="phone" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent text-black bg-white placeholder-gray-500">
+                        </div>
+                    </div>
+
+                    <!-- Health Information -->
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">
+                            Primary Health Concern *
+                        </label>
+                        <textarea name="healthConcern" rows="3" required placeholder="Please describe your main health concern or what you'd like to address..." class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent text-black bg-white placeholder-gray-500"></textarea>
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">
+                            Current Medications (if any)
+                        </label>
+                        <textarea name="medications" rows="2" placeholder="List any current medications or supplements you're taking..." class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent text-black bg-white placeholder-gray-500"></textarea>
+                    </div>
+
+                    <!-- Preferred Contact Method -->
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">
+                            Preferred Contact Method *
+                        </label>
+                        <div class="space-y-2">
+                            <label class="flex items-center">
+                                <input type="radio" name="contactMethod" value="phone" required class="mr-2">
+                                <span class="text-black">Phone Call</span>
+                            </label>
+                            <label class="flex items-center">
+                                <input type="radio" name="contactMethod" value="email" required class="mr-2">
+                                <span class="text-black">Email</span>
+                            </label>
+                            <label class="flex items-center">
+                                <input type="radio" name="contactMethod" value="whatsapp" required class="mr-2">
+                                <span class="text-black">WhatsApp</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Preferred Time -->
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">
+                            Preferred Consultation Time
+                        </label>
+                        <select name="preferredTime" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent text-black bg-white">
+                            <option value="" class="text-black">Select preferred time</option>
+                            <option value="morning" class="text-black">Morning (9 AM - 12 PM)</option>
+                            <option value="afternoon" class="text-black">Afternoon (1 PM - 4 PM)</option>
+                            <option value="evening" class="text-black">Evening (5 PM - 7 PM)</option>
+                        </select>
+                    </div>
+
+                    <!-- Additional Notes -->
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">
+                            Additional Notes
+                        </label>
+                        <textarea name="notes" rows="3" placeholder="Any additional information you'd like to share..." class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent text-black bg-white placeholder-gray-500"></textarea>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <div class="text-center">
+                        <button type="submit" class="btn-primary px-8 py-4 text-lg" style="border-radius: 2rem !important; background: linear-gradient(135deg, #4CAF50, #6FBF73) !important; color: white !important; padding: 1rem 2.5rem !important; font-weight: 600 !important; font-size: 1rem !important; text-decoration: none !important; border: none !important; cursor: pointer !important; box-shadow: 0 4px 15px rgba(76, 175, 80, 0.3) !important; transition: all 0.3s ease !important; display: inline-block !important; text-align: center !important;">Book Consultation</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- What to Expect -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="font-lora text-3xl md:text-4xl font-bold text-green-800 mb-6">
+                    What to Expect
+                </h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                    Your consultation journey with Maingrace247 is designed to be comprehensive, personalized, and effective.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="text-center p-6">
+                    <div class="text-4xl mb-4">📋</div>
+                    <h3 class="font-lora text-xl font-semibold text-green-800 mb-2">1. Initial Assessment</h3>
+                    <p class="text-gray-600">Comprehensive health history and current symptoms evaluation</p>
+                </div>
+                <div class="text-center p-6">
+                    <div class="text-4xl mb-4">🎯</div>
+                    <h3 class="font-lora text-xl font-semibold text-green-800 mb-2">2. Personalized Plan</h3>
+                    <p class="text-gray-600">Custom treatment plan tailored to your specific needs</p>
+                </div>
+                <div class="text-center p-6">
+                    <div class="text-4xl mb-4">🌿</div>
+                    <h3 class="font-lora text-xl font-semibold text-green-800 mb-2">3. Herbal Recommendations</h3>
+                    <p class="text-gray-600">Specific herbal remedies and wellness products</p>
+                </div>
+                <div class="text-center p-6">
+                    <div class="text-4xl mb-4">📞</div>
+                    <h3 class="font-lora text-xl font-semibold text-green-800 mb-2">4. Ongoing Support</h3>
+                    <p class="text-gray-600">Follow-up care and continuous guidance throughout your journey</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-16 bg-green-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="font-lora text-3xl md:text-4xl font-bold text-green-800 mb-6">
+                    What Our Clients Say
+                </h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                    Hear from clients who have experienced the benefits of our consultations and treatments.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-2xl shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400">★★★★★</div>
+                    </div>
+                    <p class="text-gray-600 mb-4">
+                        "The consultation was incredibly thorough. Dr. Grace took the time to understand my health concerns and provided a personalized treatment plan that has made a real difference."
+                    </p>
+                    <div class="font-semibold text-green-800">- Sarah M.</div>
+                </div>
+
+                <div class="bg-white p-6 rounded-2xl shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400">★★★★★</div>
+                    </div>
+                    <p class="text-gray-600 mb-4">
+                        "I was skeptical about traditional medicine, but the consultation opened my eyes to natural healing. The herbal remedies have been effective and I feel much better."
+                    </p>
+                    <div class="font-semibold text-green-800">- John K.</div>
+                </div>
+
+                <div class="bg-white p-6 rounded-2xl shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400">★★★★★</div>
+                    </div>
+                    <p class="text-gray-600 mb-4">
+                        "The wellness program has been life-changing. The ongoing support and guidance have helped me achieve better health and well-being than I ever thought possible."
+                    </p>
+                    <div class="font-semibold text-green-800">- Mary W.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-gradient-to-br from-green-500 to-green-600 text-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="font-lora text-3xl md:text-4xl font-bold mb-6">
+                Ready to Start Your Healing Journey?
+            </h2>
+            <p class="text-xl mb-8">
+                Book your consultation today and take the first step towards natural wellness and holistic health.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#consultation-form" class="btn-primary bg-white text-green-600 hover:bg-gray-100">Book Now</a>
+                <a href="contact.html" class="btn-secondary border-white text-white hover:bg-white hover:text-green-600">Contact Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <!-- Company Info -->
+                <div class="space-y-4">
+                    <div class="flex items-center space-x-2">
+                        <img src="images/MAINGRACE-LOGO.webp" alt="Maingrace247 Logo" class="h-8 w-auto">
+                        <span class="font-lora text-lg font-semibold">Maingrace247</span>
+                    </div>
+                    <p class="text-gray-300">
+                        Traditional healing for modern wellness. Expert herbal medicine and holistic health solutions.
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="space-y-4">
+                    <h3 class="font-lora text-lg font-semibold">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-300 hover:text-green-400 transition-colors">Home</a></li>
+                        <li><a href="about.html" class="text-gray-300 hover:text-green-400 transition-colors">About Us</a></li>
+                        <li><a href="services.html" class="text-gray-300 hover:text-green-400 transition-colors">Services</a></li>
+                        <li><a href="products.html" class="text-gray-300 hover:text-green-400 transition-colors">Products</a></li>
+                        <li><a href="blog.html" class="text-gray-300 hover:text-green-400 transition-colors">Blog</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services -->
+                <div class="space-y-4">
+                    <h3 class="font-lora text-lg font-semibold">Services</h3>
+                    <ul class="space-y-2">
+                        <li><a href="consultations.html" class="text-gray-300 hover:text-green-400 transition-colors">Consultations</a></li>
+                        <li><a href="services.html" class="text-gray-300 hover:text-green-400 transition-colors">Herbal Remedies</a></li>
+                        <li><a href="services.html" class="text-gray-300 hover:text-green-400 transition-colors">Wellness Programs</a></li>
+                        <li><a href="services.html" class="text-gray-300 hover:text-green-400 transition-colors">Detox & Cleansing</a></li>
+                        <li><a href="services.html" class="text-gray-300 hover:text-green-400 transition-colors">Immune Support</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="space-y-4">
+                    <h3 class="font-lora text-lg font-semibold">Contact</h3>
+                    <div class="space-y-2">
+                        <p class="text-gray-300">📍 Nairobi, Kenya</p>
+                        <p class="text-gray-300">📞 +254 700 123 456</p>
+                        <p class="text-gray-300">✉️ info@maingrace247.com</p>
+                    </div>
+                    <div class="pt-4">
+                        <a href="contact.html" class="btn-primary" style="border-radius: 2rem !important; background: linear-gradient(135deg, #4CAF50, #6FBF73) !important; color: white !important; padding: 1rem 2.5rem !important; font-weight: 600 !important; font-size: 1rem !important; text-decoration: none !important; border: none !important; cursor: pointer !important; box-shadow: 0 4px 15px rgba(76, 175, 80, 0.3) !important; transition: all 0.3s ease !important; display: inline-block !important; text-align: center !important;">Get in Touch</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom Footer -->
+            <div class="border-t border-gray-800 mt-12 pt-8">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <p class="text-gray-400 text-sm">
+                        © 2025 Maingrace247 Tradomedical Service. All rights reserved.
+                    </p>
+                    <div class="flex space-x-6 mt-4 md:mt-0">
+                        <a href="privacy-policy.html" class="text-gray-400 hover:text-green-400 text-sm transition-colors">Privacy Policy</a>
+                        <a href="terms-of-service.html" class="text-gray-400 hover:text-green-400 text-sm transition-colors">Terms of Service</a>
+                        <a href="medical-disclaimer.html" class="text-gray-400 hover:text-green-400 text-sm transition-colors">Medical Disclaimer</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+    <script src="js/cursor.js"></script>
+    <script src="js/booking.js"></script>
+</body>
+</html> 

@@ -1,0 +1,23 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://maingrace247.com/sitemap.xml
+
+# Disallow admin and private areas
+Disallow: /admin/
+Disallow: /private/
+Disallow: /temp/
+Disallow: /cgi-bin/
+
+# Allow important pages
+Allow: /about/
+Allow: /services/
+Allow: /products/
+Allow: /consultations/
+Allow: /blog/
+Allow: /contact/
+Allow: /testimonials/
+
+# Crawl delay for respectful crawling
+Crawl-delay: 1 

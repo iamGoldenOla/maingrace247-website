@@ -1,0 +1,263 @@
+{
+  "products": [
+    {
+      "id": "immune-boost-blend",
+      "name": "Immune Boost Herbal Blend",
+      "description": "Traditional herbal blend to strengthen your immune system naturally.",
+      "price": "$35.00",
+      "originalPrice": "$45.00",
+      "image": "images/products/immune-boost-blend.webp",
+      "category": "immune-support",
+      "ingredients": [
+        "Echinacea purpurea",
+        "Astragalus membranaceus",
+        "Ginseng root",
+        "Elderberry",
+        "Vitamin C"
+      ],
+      "benefits": [
+        "Strengthens immune system",
+        "Reduces cold and flu symptoms",
+        "Natural antiviral properties",
+        "Boosts energy levels",
+        "Supports overall wellness"
+      ],
+      "usage": "Take 1-2 capsules daily with meals",
+      "size": "60 capsules",
+      "rating": 4.8,
+      "reviews": 127,
+      "inStock": true,
+      "featured": true
+    },
+    {
+      "id": "calm-mind-tea",
+      "name": "Calm Mind Herbal Tea",
+      "description": "Soothing herbal tea blend for stress relief and mental clarity.",
+      "price": "$28.00",
+      "originalPrice": "$35.00",
+      "image": "images/products/calm-mind-tea.webp",
+      "category": "stress-relief",
+      "ingredients": [
+        "Chamomile flowers",
+        "Lavender buds",
+        "Lemon balm",
+        "Passionflower",
+        "Valerian root"
+      ],
+      "benefits": [
+        "Reduces stress and anxiety",
+        "Promotes better sleep",
+        "Improves mental clarity",
+        "Natural relaxation",
+        "Supports nervous system"
+      ],
+      "usage": "Steep 1-2 teaspoons in hot water for 5-7 minutes",
+      "size": "30 tea bags",
+      "rating": 4.9,
+      "reviews": 89,
+      "inStock": true,
+      "featured": true
+    },
+    {
+      "id": "detox-cleansing-formula",
+      "name": "Natural Detox Cleansing Formula",
+      "description": "Complete detoxification formula using traditional cleansing herbs.",
+      "price": "$42.00",
+      "originalPrice": "$55.00",
+      "image": "images/products/detox-cleansing-formula.webp",
+      "category": "detox",
+      "ingredients": [
+        "Milk thistle",
+        "Dandelion root",
+        "Burdock root",
+        "Nettle leaf",
+        "Yellow dock"
+      ],
+      "benefits": [
+        "Supports liver function",
+        "Natural detoxification",
+        "Improves digestion",
+        "Clears skin",
+        "Boosts energy"
+      ],
+      "usage": "Take 2 capsules twice daily with water",
+      "size": "90 capsules",
+      "rating": 4.7,
+      "reviews": 156,
+      "inStock": true,
+      "featured": false
+    },
+    {
+      "id": "joint-comfort-blend",
+      "name": "Joint Comfort Herbal Blend",
+      "description": "Traditional herbal formula for joint health and mobility support.",
+      "price": "$38.00",
+      "originalPrice": "$48.00",
+      "image": "images/products/joint-comfort-blend.webp",
+      "category": "wellness",
+      "ingredients": [
+        "Turmeric root",
+        "Boswellia serrata",
+        "Ginger root",
+        "Willow bark",
+        "Devil's claw"
+      ],
+      "benefits": [
+        "Reduces joint inflammation",
+        "Improves mobility",
+        "Natural pain relief",
+        "Supports cartilage health",
+        "Anti-inflammatory properties"
+      ],
+      "usage": "Take 1-2 capsules daily with meals",
+      "size": "60 capsules",
+      "rating": 4.6,
+      "reviews": 203,
+      "inStock": true,
+      "featured": false
+    },
+    {
+      "id": "digestive-harmony",
+      "name": "Digestive Harmony Formula",
+      "description": "Gentle herbal blend to support healthy digestion and gut health.",
+      "price": "$32.00",
+      "originalPrice": "$40.00",
+      "image": "images/products/digestive-harmony.webp",
+      "category": "wellness",
+      "ingredients": [
+        "Peppermint leaf",
+        "Fennel seed",
+        "Ginger root",
+        "Chamomile flowers",
+        "Slippery elm bark"
+      ],
+      "benefits": [
+        "Soothes digestive discomfort",
+        "Reduces bloating",
+        "Supports gut health",
+        "Improves nutrient absorption",
+        "Gentle on stomach"
+      ],
+      "usage": "Take 1 capsule before meals",
+      "size": "45 capsules",
+      "rating": 4.8,
+      "reviews": 178,
+      "inStock": true,
+      "featured": false
+    },
+    {
+      "id": "sleep-well-tincture",
+      "name": "Sleep Well Herbal Tincture",
+      "description": "Natural sleep support tincture for restful, rejuvenating sleep.",
+      "price": "$45.00",
+      "originalPrice": "$58.00",
+      "image": "images/products/sleep-well-tincture.webp",
+      "category": "stress-relief",
+      "ingredients": [
+        "Valerian root",
+        "Passionflower",
+        "Hops flowers",
+        "Lemon balm",
+        "Skullcap"
+      ],
+      "benefits": [
+        "Promotes deep sleep",
+        "Reduces insomnia",
+        "Calms nervous system",
+        "Improves sleep quality",
+        "Non-habit forming"
+      ],
+      "usage": "Take 1 dropperful 30 minutes before bedtime",
+      "size": "2 fl oz",
+      "rating": 4.9,
+      "reviews": 234,
+      "inStock": true,
+      "featured": true
+    },
+    {
+      "id": "energy-vitality-blend",
+      "name": "Energy & Vitality Herbal Blend",
+      "description": "Natural energy booster using traditional adaptogenic herbs.",
+      "price": "$40.00",
+      "originalPrice": "$52.00",
+      "image": "images/products/energy-vitality-blend.webp",
+      "category": "wellness",
+      "ingredients": [
+        "Rhodiola rosea",
+        "Ashwagandha",
+        "Ginseng root",
+        "Maca root",
+        "Cordyceps mushroom"
+      ],
+      "benefits": [
+        "Increases energy levels",
+        "Reduces fatigue",
+        "Improves mental focus",
+        "Supports adrenal health",
+        "Natural stress adaptation"
+      ],
+      "usage": "Take 1 capsule in the morning",
+      "size": "60 capsules",
+      "rating": 4.7,
+      "reviews": 145,
+      "inStock": true,
+      "featured": false
+    },
+    {
+      "id": "skin-glow-formula",
+      "name": "Skin Glow Herbal Formula",
+      "description": "Beauty formula for radiant skin using traditional beauty herbs.",
+      "price": "$36.00",
+      "originalPrice": "$45.00",
+      "image": "images/products/skin-glow-formula.webp",
+      "category": "wellness",
+      "ingredients": [
+        "Burdock root",
+        "Dandelion root",
+        "Nettle leaf",
+        "Red clover",
+        "Yellow dock"
+      ],
+      "benefits": [
+        "Clears skin complexion",
+        "Reduces blemishes",
+        "Supports skin health",
+        "Natural detoxification",
+        "Promotes radiant glow"
+      ],
+      "usage": "Take 1-2 capsules daily with water",
+      "size": "60 capsules",
+      "rating": 4.6,
+      "reviews": 167,
+      "inStock": true,
+      "featured": false
+    }
+  ],
+  "categories": [
+    {
+      "id": "immune-support",
+      "name": "Immune Support",
+      "description": "Strengthen your natural defenses"
+    },
+    {
+      "id": "stress-relief",
+      "name": "Stress Relief",
+      "description": "Natural relaxation and calm"
+    },
+    {
+      "id": "detox",
+      "name": "Detox & Cleansing",
+      "description": "Natural detoxification support"
+    },
+    {
+      "id": "wellness",
+      "name": "Wellness",
+      "description": "Overall health and vitality"
+    }
+  ],
+  "featured": [
+    "immune-boost-blend",
+    "calm-mind-tea",
+    "sleep-well-tincture"
+  ]
+} 

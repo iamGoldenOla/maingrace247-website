@@ -1,0 +1,132 @@
+{
+  "services": [
+    {
+      "id": "personal-consultation",
+      "name": "Personal Consultation",
+      "description": "One-on-one consultation to assess your health needs and create personalized herbal treatment plans.",
+      "duration": "60 minutes",
+      "price": "$75",
+      "features": [
+        "Comprehensive health assessment",
+        "Personalized herbal prescriptions",
+        "Lifestyle recommendations",
+        "Follow-up care plan",
+        "Email support for 30 days"
+      ],
+      "icon": "👨‍⚕️",
+      "category": "consultation"
+    },
+    {
+      "id": "herbal-remedy",
+      "name": "Herbal Remedy Consultation",
+      "description": "Specialized consultation focusing on traditional herbal medicines and natural remedies.",
+      "duration": "45 minutes",
+      "price": "$60",
+      "features": [
+        "Herbal medicine assessment",
+        "Custom herbal formulations",
+        "Traditional remedy education",
+        "Dosage and usage guidance",
+        "Quality herbal product recommendations"
+      ],
+      "icon": "🌿",
+      "category": "herbal"
+    },
+    {
+      "id": "wellness-program",
+      "name": "Wellness Program",
+      "description": "Comprehensive wellness program combining herbal medicine with lifestyle guidance and stress management.",
+      "duration": "90 minutes",
+      "price": "$120",
+      "features": [
+        "Holistic wellness assessment",
+        "Custom wellness plan",
+        "Stress management techniques",
+        "Nutritional guidance",
+        "3-month follow-up support"
+      ],
+      "icon": "🧘‍♀️",
+      "category": "wellness"
+    },
+    {
+      "id": "detox-program",
+      "name": "Detox & Cleansing",
+      "description": "Natural detoxification program using traditional herbs and cleansing techniques.",
+      "duration": "75 minutes",
+      "price": "$95",
+      "features": [
+        "Body system assessment",
+        "Custom detox protocol",
+        "Herbal cleansing formulas",
+        "Dietary recommendations",
+        "Progress monitoring"
+      ],
+      "icon": "🌱",
+      "category": "detox"
+    },
+    {
+      "id": "immune-support",
+      "name": "Immune Support",
+      "description": "Strengthen your immune system with traditional herbal remedies and natural supplements.",
+      "duration": "45 minutes",
+      "price": "$65",
+      "features": [
+        "Immune system evaluation",
+        "Herbal immune boosters",
+        "Preventive care strategies",
+        "Seasonal wellness tips",
+        "Ongoing support"
+      ],
+      "icon": "🛡️",
+      "category": "immune"
+    },
+    {
+      "id": "stress-relief",
+      "name": "Stress Relief & Relaxation",
+      "description": "Natural stress relief using calming herbs, meditation techniques, and relaxation methods.",
+      "duration": "60 minutes",
+      "price": "$80",
+      "features": [
+        "Stress level assessment",
+        "Calming herbal remedies",
+        "Meditation guidance",
+        "Breathing techniques",
+        "Lifestyle stress management"
+      ],
+      "icon": "😌",
+      "category": "stress"
+    }
+  ],
+  "categories": [
+    {
+      "id": "consultation",
+      "name": "Consultations",
+      "description": "Personal health assessments and treatment planning"
+    },
+    {
+      "id": "herbal",
+      "name": "Herbal Remedies",
+      "description": "Traditional herbal medicines and natural treatments"
+    },
+    {
+      "id": "wellness",
+      "name": "Wellness Programs",
+      "description": "Comprehensive health and wellness programs"
+    },
+    {
+      "id": "detox",
+      "name": "Detox & Cleansing",
+      "description": "Natural detoxification and cleansing programs"
+    },
+    {
+      "id": "immune",
+      "name": "Immune Support",
+      "description": "Immune system strengthening and support"
+    },
+    {
+      "id": "stress",
+      "name": "Stress Relief",
+      "description": "Stress management and relaxation techniques"
+    }
+  ]
+} 

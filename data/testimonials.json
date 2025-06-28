@@ -1,0 +1,198 @@
+{
+  "testimonials": [
+    {
+      "id": "testimonial-1",
+      "clientName": "Sarah Johnson",
+      "clientImage": "images/testimonials/client-1.webp",
+      "age": 34,
+      "location": "New York, NY",
+      "service": "Personal Consultation",
+      "rating": 5,
+      "date": "2024-12-15",
+      "title": "Life-changing experience with traditional medicine",
+      "content": "After struggling with chronic fatigue and stress for years, I decided to try Maingrace247's traditional medicine approach. The consultation was thorough and personalized. The herbal remedies they prescribed have completely transformed my energy levels and overall well-being. I feel like a new person!",
+      "benefits": [
+        "Increased energy levels",
+        "Better sleep quality",
+        "Reduced stress and anxiety",
+        "Improved overall health"
+      ],
+      "featured": true,
+      "verified": true
+    },
+    {
+      "id": "testimonial-2",
+      "clientName": "Michael Chen",
+      "clientImage": "images/testimonials/client-2.webp",
+      "age": 42,
+      "location": "Los Angeles, CA",
+      "service": "Herbal Remedy Consultation",
+      "rating": 5,
+      "date": "2024-12-10",
+      "title": "Natural healing that actually works",
+      "content": "I was skeptical about herbal medicine until I tried Maingrace247. Their Immune Boost Herbal Blend helped me get through the flu season without getting sick once. The consultation was professional and the results speak for themselves. Highly recommend!",
+      "benefits": [
+        "Strengthened immune system",
+        "No colds or flu",
+        "Improved vitality",
+        "Natural approach to health"
+      ],
+      "featured": true,
+      "verified": true
+    },
+    {
+      "id": "testimonial-3",
+      "clientName": "Emily Rodriguez",
+      "clientImage": "images/testimonials/client-3.webp",
+      "age": 28,
+      "location": "Miami, FL",
+      "service": "Stress Relief & Relaxation",
+      "rating": 5,
+      "date": "2024-12-08",
+      "title": "Finally found peace and calm",
+      "content": "As a busy professional, stress was taking a toll on my health. The Calm Mind Herbal Tea and stress management techniques from Maingrace247 have been incredible. I sleep better, feel more relaxed, and my anxiety has significantly decreased.",
+      "benefits": [
+        "Better sleep quality",
+        "Reduced anxiety",
+        "Improved stress management",
+        "Enhanced mental clarity"
+      ],
+      "featured": true,
+      "verified": true
+    },
+    {
+      "id": "testimonial-4",
+      "clientName": "David Thompson",
+      "clientImage": "images/testimonials/client-4.webp",
+      "age": 51,
+      "location": "Chicago, IL",
+      "service": "Joint Comfort Herbal Blend",
+      "rating": 5,
+      "date": "2024-12-05",
+      "title": "Joint pain relief that works naturally",
+      "content": "I've been dealing with joint pain for years and tried everything. The Joint Comfort Herbal Blend from Maingrace247 has been a game-changer. My mobility has improved significantly and the pain has reduced dramatically. Thank you!",
+      "benefits": [
+        "Reduced joint pain",
+        "Improved mobility",
+        "Natural pain relief",
+        "Better quality of life"
+      ],
+      "featured": false,
+      "verified": true
+    },
+    {
+      "id": "testimonial-5",
+      "clientName": "Lisa Wang",
+      "clientImage": "images/testimonials/client-5.webp",
+      "age": 39,
+      "location": "Seattle, WA",
+      "service": "Detox & Cleansing",
+      "rating": 5,
+      "date": "2024-12-03",
+      "title": "Amazing detox results",
+      "content": "The detox program at Maingrace247 was exactly what I needed. I feel lighter, more energetic, and my skin has never looked better. The herbal cleansing formulas are gentle yet effective. Highly recommend their detox services!",
+      "benefits": [
+        "Increased energy",
+        "Clearer skin",
+        "Better digestion",
+        "Overall wellness improvement"
+      ],
+      "featured": false,
+      "verified": true
+    },
+    {
+      "id": "testimonial-6",
+      "clientName": "Robert Martinez",
+      "clientImage": "images/testimonials/client-6.webp",
+      "age": 45,
+      "location": "Austin, TX",
+      "service": "Wellness Program",
+      "rating": 5,
+      "date": "2024-11-28",
+      "title": "Comprehensive wellness transformation",
+      "content": "The wellness program at Maingrace247 is comprehensive and life-changing. They addressed my health holistically - mind, body, and spirit. The personalized approach and ongoing support have made all the difference in my health journey.",
+      "benefits": [
+        "Holistic health improvement",
+        "Better lifestyle habits",
+        "Ongoing support",
+        "Comprehensive wellness"
+      ],
+      "featured": false,
+      "verified": true
+    },
+    {
+      "id": "testimonial-7",
+      "clientName": "Jennifer Adams",
+      "clientImage": "images/testimonials/client-7.webp",
+      "age": 31,
+      "location": "Denver, CO",
+      "service": "Sleep Well Herbal Tincture",
+      "rating": 5,
+      "date": "2024-11-25",
+      "title": "Finally sleeping through the night",
+      "content": "I've struggled with insomnia for years. The Sleep Well Herbal Tincture from Maingrace247 has been a miracle. I fall asleep faster, sleep deeper, and wake up feeling refreshed. It's completely natural and non-habit forming.",
+      "benefits": [
+        "Better sleep quality",
+        "Faster sleep onset",
+        "Natural solution",
+        "Non-habit forming"
+      ],
+      "featured": false,
+      "verified": true
+    },
+    {
+      "id": "testimonial-8",
+      "clientName": "Thomas Wilson",
+      "clientImage": "images/testimonials/client-8.webp",
+      "age": 37,
+      "location": "Portland, OR",
+      "service": "Energy & Vitality Herbal Blend",
+      "rating": 5,
+      "date": "2024-11-20",
+      "title": "Natural energy boost that lasts",
+      "content": "The Energy & Vitality Herbal Blend has transformed my daily life. I have sustained energy throughout the day without the crash that comes with caffeine. My focus has improved and I feel more productive than ever.",
+      "benefits": [
+        "Sustained energy",
+        "Improved focus",
+        "No energy crashes",
+        "Natural boost"
+      ],
+      "featured": false,
+      "verified": true
+    }
+  ],
+  "statistics": {
+    "totalClients": 1250,
+    "averageRating": 4.9,
+    "successRate": 98,
+    "yearsOfService": 8,
+    "satisfiedClients": 1225
+  },
+  "categories": [
+    {
+      "id": "all",
+      "name": "All Testimonials",
+      "count": 8
+    },
+    {
+      "id": "consultation",
+      "name": "Consultations",
+      "count": 2
+    },
+    {
+      "id": "herbal",
+      "name": "Herbal Remedies",
+      "count": 3
+    },
+    {
+      "id": "wellness",
+      "name": "Wellness Programs",
+      "count": 2
+    },
+    {
+      "id": "stress",
+      "name": "Stress Relief",
+      "count": 1
+    }
+  ]
+} 

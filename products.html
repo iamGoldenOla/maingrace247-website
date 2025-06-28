@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Products - Maingrace247</title>
+    <meta name="description" content="Discover our range of traditional herbal remedies and wellness products at Maingrace247.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- TailwindCSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header-fix.css">
+    <link rel="stylesheet" href="css/cursor.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/webp" href="images/MAINGRACE-LOGO.webp">
+</head>
+<body class="font-inter bg-gradient-to-br from-green-50 to-white">
+    <!-- Custom Cursor -->
+    <div id="custom-cursor" class="custom-cursor"></div>
+    <div id="cursor-trail" class="cursor-trail"></div>
+    
+    <!-- Navigation - FIXED HEADER -->
+    <nav class="fixed top-0 w-full z-40">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex-shrink-0">
+                    <a href="index.html" class="flex items-center space-x-2">
+                        <span class="text-xl font-lora font-semibold">Maingrace247</span>
+                    </a>
+                </div>
+                
+                <!-- Right Side Navigation and CTA -->
+                <div class="hidden md:flex items-center space-x-4">
+                    <!-- Desktop Navigation -->
+                    <div class="flex items-baseline space-x-4">
+                        <a href="index.html" class="nav-link">Home</a>
+                        <a href="about.html" class="nav-link">About</a>
+                        <a href="services.html" class="nav-link">Services</a>
+                        <a href="products.html" class="nav-link active">Products</a>
+                        <a href="consultations.html" class="nav-link">Consultations</a>
+                        <a href="blog.html" class="nav-link">Blog</a>
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </div>
+                    
+                    <!-- CTA Button -->
+                    <a href="consultations.html" class="btn-primary">Book Consultation</a>
+                </div>
+                
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="p-2 rounded-md">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile Navigation -->
+        <div id="mobile-menu" class="hidden md:hidden">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="index.html" class="mobile-nav-link">Home</a>
+                <a href="about.html" class="mobile-nav-link">About</a>
+                <a href="services.html" class="mobile-nav-link">Services</a>
+                <a href="products.html" class="mobile-nav-link active">Products</a>
+                <a href="consultations.html" class="mobile-nav-link">Consultations</a>
+                <a href="blog.html" class="mobile-nav-link">Blog</a>
+                <a href="contact.html" class="mobile-nav-link">Contact</a>
+                <a href="consultations.html" class="btn-primary w-full mt-4">Book Consultation</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="relative min-h-[60vh] flex items-center justify-center overflow-hidden pt-24 pb-16" style="background-image: url('images/mmmm.webp'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+        <div class="absolute inset-0 bg-emerald-900/30"></div>
+        <!-- Floating Elements -->
+        <div class="absolute top-20 left-10 floating-leaf">🌿</div>
+        <div class="absolute top-40 right-20 floating-leaf">🍃</div>
+        <div class="absolute bottom-40 left-20 floating-leaf">🌱</div>
+        <div class="absolute top-60 left-1/4 floating-leaf">🌿</div>
+        <div class="absolute bottom-60 right-1/4 floating-leaf">🍃</div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center">
+                <nav class="flex items-center justify-center gap-2 mb-6 text-green-100">
+                    <a href="index.html" class="hover:text-white transition-colors">Home</a>
+                    <span>/</span>
+                    <span>Products</span>
+                </nav>
+                <h1 class="font-lora text-4xl md:text-6xl font-bold mb-6">
+                    Our Products
+                </h1>
+                <p class="text-xl max-w-3xl mx-auto mb-8">
+                    Discover our carefully crafted herbal remedies and wellness products, made with traditional 
+                    wisdom and the finest natural ingredients.
+                </p>
+                
+                <!-- Product Preview Cards -->
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto mt-12">
+                    <div class="bg-white/20 backdrop-blur-sm rounded-2xl p-4 hover:bg-white/30 transition-all duration-300 transform hover:scale-105">
+                        <div class="h-16 w-16 mx-auto mb-3 bg-white/20 rounded-xl flex items-center justify-center">
+                            <img src="images/Gee1-removebg-preview.png" alt="Gee 1" class="w-12 h-12 object-contain">
+                        </div>
+                        <p class="text-sm font-medium text-white">Immune Support</p>
+                    </div>
+                    <div class="bg-white/20 backdrop-blur-sm rounded-2xl p-4 hover:bg-white/30 transition-all duration-300 transform hover:scale-105">
+                        <div class="h-16 w-16 mx-auto mb-3 bg-white/20 rounded-xl flex items-center justify-center">
+                            <img src="images/Gee2-removebg-preview.png" alt="Gee 2" class="w-12 h-12 object-contain">
+                        </div>
+                        <p class="text-sm font-medium text-white">Stress Relief</p>
+                    </div>
+                    <div class="bg-white/20 backdrop-blur-sm rounded-2xl p-4 hover:bg-white/30 transition-all duration-300 transform hover:scale-105">
+                        <div class="h-16 w-16 mx-auto mb-3 bg-white/20 rounded-xl flex items-center justify-center">
+                            <img src="images/Gee3-removebg-preview.png" alt="Gee 3" class="w-12 h-12 object-contain">
+                        </div>
+                        <p class="text-sm font-medium text-white">Traditional Medicine</p>
+                    </div>
+                    <div class="bg-white/20 backdrop-blur-sm rounded-2xl p-4 hover:bg-white/30 transition-all duration-300 transform hover:scale-105">
+                        <div class="h-16 w-16 mx-auto mb-3 bg-white/20 rounded-xl flex items-center justify-center">
+                            <img src="images/Gee5-removebg-preview.png" alt="Gee 5" class="w-12 h-12 object-contain">
+                        </div>
+                        <p class="text-sm font-medium text-white">Detox & Cleansing</p>
+                    </div>
+                </div>
+                
+                <!-- CTA Buttons -->
+                <div class="flex flex-col sm:flex-row gap-4 justify-center mt-8">
+                    <a href="#gee-collection" class="btn-primary text-lg px-8 py-4" style="border-radius: 2rem !important; background: linear-gradient(135deg, #4CAF50, #6FBF73) !important; color: white !important; padding: 1rem 2.5rem !important; font-weight: 600 !important; font-size: 1rem !important; text-decoration: none !important; border: none !important; cursor: pointer !important; box-shadow: 0 4px 15px rgba(76, 175, 80, 0.3) !important; transition: all 0.3s ease !important; display: inline-block !important; text-align: center !important;">Explore Collection</a>
+                    <a href="consultations.html" class="btn-secondary text-lg px-8 py-4" style="border-radius: 2rem !important; background: transparent !important; color: white !important; border: 2px solid white !important; font-weight: 600 !important; font-size: 1rem !important; text-decoration: none !important; cursor: pointer !important; transition: all 0.3s ease !important; display: inline-block !important; text-align: center !important;">Book Consultation</a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Scroll Indicator -->
+        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2">
+            <div class="scroll-indicator"></div>
+        </div>
+    </section>
+
+    <!-- Gee Product Showcase -->
+    <section class="py-20 bg-gradient-to-br from-green-50 to-emerald-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="font-lora text-3xl md:text-4xl font-bold text-green-800 mb-6">
+                    Our Signature Collection
+                </h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                    Discover our premium herbal remedies, each carefully formulated using traditional wisdom and the finest natural ingredients for optimal health and wellness.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Gee 1 - Immune Support -->
+                <div class="bg-white rounded-3xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-3">
+                    <div class="h-64 bg-gradient-to-br from-green-100 to-green-200 flex items-center justify-center p-6">
+                        <img src="images/Gee1-removebg-preview.png" alt="Gee 1 - Immune Support" class="w-full h-full object-contain">
+                    </div>
+                    <div class="p-8">
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm font-medium">Premium</span>
+                            <span class="text-2xl font-bold text-green-800">$45</span>
+                        </div>
+                        <h3 class="font-lora text-2xl font-semibold text-green-800 mb-3">Gee 1 - Immune Support</h3>
+                        <p class="text-gray-600 mb-6 leading-relaxed">
+                            A powerful blend of traditional herbs designed to strengthen your immune system and provide year-round protection against seasonal challenges.
+                        </p>
+                        <ul class="text-sm text-gray-600 mb-6 space-y-2">
+                            <li class="flex items-center"><span class="text-green-500 mr-2">✓</span>Natural immune boosters</li>
+                            <li class="flex items-center"><span class="text-green-500 mr-2">✓</span>Antioxidant rich herbs</li>
+                            <li class="flex items-center"><span class="text-green-500 mr-2">✓</span>Traditional formulation</li>
+                        </ul>
+                        <a href="consultations.html" class="btn-primary w-full text-center" style="border-radius: 2rem !important; background: linear-gradient(135deg, #4CAF50, #6FBF73) !important; color: white !important; padding: 1rem 2rem !important; font-weight: 600 !important; font-size: 1rem !important; text-decoration: none !important; border: none !important; cursor: pointer !important; box-shadow: 0 4px 15px rgba(76, 175, 80, 0.3) !important; transition: all 0.3s ease !important; display: inline-block !important;">Order Now</a>
+                    </div>
+                </div>
+
+                <!-- Gee 2 - Stress Relief -->
+                <div class="bg-white rounded-3xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-3">
+                    <div class="h-64 bg-gradient-to-br from-blue-100 to-blue-200 flex items-center justify-center p-6">
+                        <img src="images/Gee2-removebg-preview.png" alt="Gee 2 - Stress Relief" class="w-full h-full object-contain">
+                    </div>
+                    <div class="p-8">
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm font-medium">Calming</span>
+                            <span class="text-2xl font-bold text-green-800">$38</span>
+                        </div>
+                        <h3 class="font-lora text-2xl font-semibold text-green-800 mb-3">Gee 2 - Stress Relief</h3>
+                        <p class="text-gray-600 mb-6 leading-relaxed">
+                            A soothing blend of calming herbs that help reduce stress, anxiety, and promote mental clarity and emotional balance.
+                        </p>
+                        <ul class="text-sm text-gray-600 mb-6 space-y-2">
+                            <li class="flex items-center"><span class="text-green-500 mr-2">✓</span>Natural stress relief</li>
+                            <li class="flex items-center"><span class="text-green-500 mr-2">✓</span>Mental clarity support</li>
+                            <li class="flex items-center"><span class="text-green-500 mr-2">✓</span>Emotional balance</li>
+                        </ul>
+                        <a href="consultations.html" class="btn-primary w-full text-center" style="border-radius: 2rem !important; background: linear-gradient(135deg, #4CAF50, #6FBF73) !important; color: white !important; padding: 1rem 2rem !important; font-weight: 600 !important; font-size: 1rem !important; text-decoration: none !important; border: none !important; cursor: pointer !important; box-shadow: 0 4px 15px rgba(76, 175, 80, 0.3) !important; transition: all 0.3s ease !important; display: inline-block !important;">Order Now</a>
+                    </div>
+                </div>
+
+                <!-- Gee 3 - Traditional Medicine -->
+                <div class="bg-white rounded-3xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-3">
+                    <div class="h-64 bg-gradient-to-br from-purple-100 to-purple-200 flex items-center justify-center p-6">
+                        <img src="images/Gee3-removebg-preview.png" alt="Gee 3 - Traditional Medicine" class="w-full h-full object-contain">
+                    </div>
+                    <div class="p-8">
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-sm font-medium">Heritage</span>
+                            <span class="text-2xl font-bold text-green-800">$52</span>
+                        </div>
+                        <h3 class="font-lora text-2xl font-semibold text-green-800 mb-3">Gee 3 - Traditional Medicine</h3>
+                        <p class="text-gray-600 mb-6 leading-relaxed">
+                            A comprehensive blend based on centuries-old traditional African medicine practices for overall health and vitality.
+                        </p>
+                        <ul class="text-sm text-gray-600 mb-6 space-y-2">
+                            <li class="flex items-center"><span class="text-green-500 mr-2">✓</span>Traditional formulation</li>
+                            <li class="flex items-center"><span class="text-green-500 mr-2">✓</span>Overall wellness</li>
+                            <li class="flex items-center"><span class="text-green-500 mr-2">✓</span>Heritage blend</li>
+                        </ul>
+                        <a href="consultations.html" class="btn-primary w-full text-center" style="border-radius: 2rem !important; background: linear-gradient(135deg, #4CAF50, #6FBF73) !important; color: white !important; padding: 1rem 2rem !important; font-weight: 600 !important; font-size: 1rem !important; text-decoration: none !important; border: none !important; cursor: pointer !important; box-shadow: 0 4px 15px rgba(76, 175, 80, 0.3) !important; transition: all 0.3s ease !important; display: inline-block !important;">Order Now</a>
+                    </div>
+                </div>
+
+                <!-- Gee 5 - Detox & Cleansing -->
+                <div class="bg-white rounded-3xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-3">
+                    <div class="h-64 bg-gradient-to-br from-orange-100 to-orange-200 flex items-center justify-center p-6">
+                        <img src="images/Gee5-removebg-preview.png" alt="Gee 5 - Detox & Cleansing" class="w-full h-full object-contain">
+                    </div>
+                    <div class="p-8">
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="px-3 py-1 bg-orange-100 text-orange-700 rounded-full text-sm font-medium">Detox</span>
+                            <span class="text-2xl font-bold text-green-800">$42</span>
+                        </div>
+                        <h3 class="font-lora text-2xl font-semibold text-green-800 mb-3">Gee 5 - Detox & Cleansing</h3>
+                        <p class="text-gray-600 mb-6 leading-relaxed">
+                            A gentle yet effective detoxification formula that supports your body's natural cleansing processes and promotes vitality.
+                        </p>
+                        <ul class="text-sm text-gray-600 mb-6 space-y-2">
+                            <li class="flex items-center"><span class="text-green-500 mr-2">✓</span>Gentle detoxification</li>
+                            <li class="flex items-center"><span class="text-green-500 mr-2">✓</span>Liver support</li>
+                            <li class="flex items-center"><span class="text-green-500 mr-2">✓</span>Natural cleansing</li>
+                        </ul>
+                        <a href="consultations.html" class="btn-primary w-full text-center" style="border-radius: 2rem !important; background: linear-gradient(135deg, #4CAF50, #6FBF73) !important; color: white !important; padding: 1rem 2rem !important; font-weight: 600 !important; font-size: 1rem !important; text-decoration: none !important; border: none !important; cursor: pointer !important; box-shadow: 0 4px 15px rgba(76, 175, 80, 0.3) !important; transition: all 0.3s ease !important; display: inline-block !important;">Order Now</a>
+                    </div>
+                </div>
+
+                <!-- Gee 6 - Immune Support -->
+                <div class="bg-white rounded-3xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-3">
+                    <div class="h-64 bg-gradient-to-br from-red-100 to-red-200 flex items-center justify-center p-6">
+                        <img src="images/Gee6-removebg-preview.png" alt="Gee 6 - Immune Support" class="w-full h-full object-contain">
+                    </div>
+                    <div class="p-8">
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="px-3 py-1 bg-red-100 text-red-700 rounded-full text-sm font-medium">Strength</span>
+                            <span class="text-2xl font-bold text-green-800">$48</span>
+                        </div>
+                        <h3 class="font-lora text-2xl font-semibold text-green-800 mb-3">Gee 6 - Immune Support</h3>
+                        <p class="text-gray-600 mb-6 leading-relaxed">
+                            A robust immune support formula that strengthens your body's natural defenses and promotes overall health resilience.
+                        </p>
+                        <ul class="text-sm text-gray-600 mb-6 space-y-2">
+                            <li class="flex items-center"><span class="text-green-500 mr-2">✓</span>Immune strengthening</li>
+                            <li class="flex items-center"><span class="text-green-500 mr-2">✓</span>Health resilience</li>
+                            <li class="flex items-center"><span class="text-green-500 mr-2">✓</span>Natural protection</li>
+                        </ul>
+                        <a href="consultations.html" class="btn-primary w-full text-center" style="border-radius: 2rem !important; background: linear-gradient(135deg, #4CAF50, #6FBF73) !important; color: white !important; padding: 1rem 2rem !important; font-weight: 600 !important; font-size: 1rem !important; text-decoration: none !important; border: none !important; cursor: pointer !important; box-shadow: 0 4px 15px rgba(76, 175, 80, 0.3) !important; transition: all 0.3s ease !important; display: inline-block !important;">Order Now</a>
+                    </div>
+                </div>
+
+                <!-- Special Collection Bundle -->
+                <div class="bg-gradient-to-br from-green-500 to-green-600 rounded-3xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-3 text-white">
+                    <div class="h-64 bg-gradient-to-br from-green-400 to-green-500 flex items-center justify-center p-6">
+                        <div class="text-center">
+                            <div class="text-6xl mb-4">🌿</div>
+                            <h3 class="font-lora text-2xl font-semibold mb-2">Complete Collection</h3>
+                            <p class="text-green-100">All 5 Gee Products</p>
+                        </div>
+                    </div>
+                    <div class="p-8">
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="px-3 py-1 bg-green-400 text-white rounded-full text-sm font-medium">Bundle</span>
+                            <span class="text-2xl font-bold">$180</span>
+                        </div>
+                        <h3 class="font-lora text-2xl font-semibold mb-3">Complete Gee Collection</h3>
+                        <p class="text-green-100 mb-6 leading-relaxed">
+                            Get all 5 Gee products in one comprehensive wellness package. Perfect for those seeking complete holistic health support.
+                        </p>
+                        <ul class="text-sm text-green-100 mb-6 space-y-2">
+                            <li class="flex items-center"><span class="text-green-200 mr-2">✓</span>All 5 Gee products included</li>
+                            <li class="flex items-center"><span class="text-green-200 mr-2">✓</span>20% savings</li>
+                            <li class="flex items-center"><span class="text-green-200 mr-2">✓</span>Complete wellness solution</li>
+                        </ul>
+                        <a href="consultations.html" class="w-full text-center bg-white text-green-600 px-6 py-3 rounded-full font-semibold hover:bg-green-50 transition-colors duration-300 inline-block">Get Complete Collection</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Categories -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="font-lora text-3xl md:text-4xl font-bold text-green-800 mb-6">
+                    Product Categories
+                </h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                    Explore our range of traditional herbal remedies and wellness products designed to support your health journey.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
+                <div class="text-center p-6 bg-green-50 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <div class="h-32 w-32 mx-auto rounded-xl mb-4 overflow-hidden">
+                        <img src="images/Gee2-removebg-preview.png" alt="Herbal Teas" class="w-full h-full object-contain">
+                    </div>
+                    <h3 class="font-lora text-xl font-semibold text-green-800 mb-2">Herbal Teas</h3>
+                    <p class="text-gray-600">Traditional tea blends for various health benefits</p>
+                </div>
+                <div class="text-center p-6 bg-green-50 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <div class="h-32 w-32 mx-auto rounded-xl mb-4 overflow-hidden">
+                        <img src="images/Gee3-removebg-preview.png" alt="Herbal Supplements" class="w-full h-full object-contain">
+                    </div>
+                    <h3 class="font-lora text-xl font-semibold text-green-800 mb-2">Herbal Supplements</h3>
+                    <p class="text-gray-600">Concentrated herbal extracts and supplements</p>
+                </div>
+                <div class="text-center p-6 bg-green-50 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <div class="h-32 w-32 mx-auto rounded-xl mb-4 overflow-hidden">
+                        <img src="images/Gee5-removebg-preview.png" alt="Wellness Products" class="w-full h-full object-contain">
+                    </div>
+                    <h3 class="font-lora text-xl font-semibold text-green-800 mb-2">Wellness Products</h3>
+                    <p class="text-gray-600">Bath salts, oils, and topical treatments</p>
+                </div>
+                <div class="text-center p-6 bg-green-50 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <div class="h-32 w-32 mx-auto rounded-xl mb-4 overflow-hidden">
+                        <img src="images/Gee6-removebg-preview.png" alt="Wellness Kits" class="w-full h-full object-contain">
+                    </div>
+                    <h3 class="font-lora text-xl font-semibold text-green-800 mb-2">Wellness Kits</h3>
+                    <p class="text-gray-600">Complete wellness packages and gift sets</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="py-16 bg-green-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="font-lora text-3xl md:text-4xl font-bold text-green-800 mb-6">
+                    Featured Products
+                </h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                    Our most popular and effective herbal remedies, carefully formulated for optimal results.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Product 1: Immune Boost Tea -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-2">
+                    <div class="h-48 bg-green-100 flex items-center justify-center overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1544787219-7f47ccb76574?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" alt="Immune Boost Tea" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-lora text-xl font-semibold text-green-800 mb-2">Immune Boost Tea</h3>
+                        <p class="text-gray-600 mb-4">
+                            A powerful blend of traditional herbs designed to strengthen your immune system and protect against seasonal illnesses.
+                        </p>
+                        <ul class="text-sm text-gray-600 mb-6 space-y-1">
+                            <li>• Echinacea & Ginger</li>
+                            <li>• Vitamin C rich herbs</li>
+                            <li>• Natural immune support</li>
+                        </ul>
+                        <div class="flex justify-between items-center">
+                            <a href="consultations.html" class="btn-primary">Order Now</a>
+                            <span class="text-2xl font-bold text-green-800">$25</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 2: Detox Cleanse Formula -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-2">
+                    <div class="h-48 bg-green-100 flex items-center justify-center overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" alt="Detox Cleanse Formula" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-lora text-xl font-semibold text-green-800 mb-2">Detox Cleanse Formula</h3>
+                        <p class="text-gray-600 mb-4">
+                            Gentle yet effective detoxification blend that supports your body's natural cleansing processes.
+                        </p>
+                        <ul class="text-sm text-gray-600 mb-6 space-y-1">
+                            <li>• Milk Thistle & Dandelion</li>
+                            <li>• Liver support herbs</li>
+                            <li>• Gentle cleansing action</li>
+                        </ul>
+                        <div class="flex justify-between items-center">
+                            <a href="consultations.html" class="btn-primary">Order Now</a>
+                            <span class="text-2xl font-bold text-green-800">$35</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 3: Stress Relief Blend -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-2">
+                    <div class="h-48 bg-green-100 flex items-center justify-center overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" alt="Stress Relief Blend" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-lora text-xl font-semibold text-green-800 mb-2">Stress Relief Blend</h3>
+                        <p class="text-gray-600 mb-4">
+                            Natural stress relief solutions combining calming herbs, relaxation techniques, and lifestyle guidance for better mental health.
+                        </p>
+                        <ul class="text-sm text-gray-600 mb-6 space-y-1">
+                            <li>• Chamomile & Lavender</li>
+                            <li>• Relaxation techniques</li>
+                            <li>• Sleep support</li>
+                        </ul>
+                        <div class="flex justify-between items-center">
+                            <a href="consultations.html" class="btn-primary">Order Now</a>
+                            <span class="text-2xl font-bold text-green-800">$30</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 4: Digestive Health Formula -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-2">
+                    <div class="h-48 bg-green-100 flex items-center justify-center overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" alt="Digestive Health Formula" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-lora text-xl font-semibold text-green-800 mb-2">Digestive Health Formula</h3>
+                        <p class="text-gray-600 mb-4">
+                            Traditional blend that supports healthy digestion and soothes digestive discomfort.
+                        </p>
+                        <ul class="text-sm text-gray-600 mb-6 space-y-1">
+                            <li>• Peppermint & Fennel</li>
+                            <li>• Digestive enzymes</li>
+                            <li>• Gut health support</li>
+                        </ul>
+                        <div class="flex justify-between items-center">
+                            <a href="consultations.html" class="btn-primary">Order Now</a>
+                            <span class="text-2xl font-bold text-green-800">$28</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 5: Energy Boost Tonic -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-2">
+                    <div class="h-48 bg-green-100 flex items-center justify-center overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" alt="Energy Boost Tonic" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-lora text-xl font-semibold text-green-800 mb-2">Energy Boost Tonic</h3>
+                        <p class="text-gray-600 mb-4">
+                            Natural energy tonic that provides sustained energy without the crash of caffeine.
+                        </p>
+                        <ul class="text-sm text-gray-600 mb-6 space-y-1">
+                            <li>• Ginseng & Maca</li>
+                            <li>• Natural energy herbs</li>
+                            <li>• Sustained vitality</li>
+                        </ul>
+                        <div class="flex justify-between items-center">
+                            <a href="consultations.html" class="btn-primary">Order Now</a>
+                            <span class="text-2xl font-bold text-green-800">$32</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 6: Wellness Gift Set -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-2">
+                    <div class="h-48 bg-green-100 flex items-center justify-center overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" alt="Wellness Gift Set" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-lora text-xl font-semibold text-green-800 mb-2">Wellness Gift Set</h3>
+                        <p class="text-gray-600 mb-4">
+                            Complete wellness package including our most popular products for the perfect gift.
+                        </p>
+                        <ul class="text-sm text-gray-600 mb-6 space-y-1">
+                            <li>• Immune Boost Tea</li>
+                            <li>• Stress Relief Blend</li>
+                            <li>• Wellness guide included</li>
+                        </ul>
+                        <div class="flex justify-between items-center">
+                            <a href="consultations.html" class="btn-primary">Order Now</a>
+                            <span class="text-2xl font-bold text-green-800">$85</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Quality -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="font-lora text-3xl md:text-4xl font-bold text-green-800 mb-6">
+                    Our Quality Promise
+                </h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                    Every product is crafted with the highest standards of quality and authenticity.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="text-center p-6">
+                    <div class="text-4xl mb-4">🌱</div>
+                    <h3 class="font-lora text-xl font-semibold text-green-800 mb-2">Natural Ingredients</h3>
+                    <p class="text-gray-600">100% natural herbs and ingredients sourced from trusted local farmers</p>
+                </div>
+                <div class="text-center p-6">
+                    <div class="text-4xl mb-4">🔬</div>
+                    <h3 class="font-lora text-xl font-semibold text-green-800 mb-2">Quality Tested</h3>
+                    <p class="text-gray-600">Rigorous testing and quality control for every batch</p>
+                </div>
+                <div class="text-center p-6">
+                    <div class="text-4xl mb-4">📜</div>
+                    <h3 class="font-lora text-xl font-semibold text-green-800 mb-2">Traditional Recipes</h3>
+                    <p class="text-gray-600">Time-tested formulations passed down through generations</p>
+                </div>
+                <div class="text-center p-6">
+                    <div class="text-4xl mb-4">💚</div>
+                    <h3 class="font-lora text-xl font-semibold text-green-800 mb-2">Safe & Effective</h3>
+                    <p class="text-gray-600">Proven safe and effective for daily use</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How to Order -->
+    <section class="py-16 bg-green-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="font-lora text-3xl md:text-4xl font-bold text-green-800 mb-6">
+                    How to Order
+                </h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                    Getting your herbal remedies is simple and convenient.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="text-center p-6">
+                    <div class="text-4xl mb-4">📞</div>
+                    <h3 class="font-lora text-xl font-semibold text-green-800 mb-2">1. Contact Us</h3>
+                    <p class="text-gray-600">Call or message us to discuss your health needs and product recommendations</p>
+                </div>
+                <div class="text-center p-6">
+                    <div class="text-4xl mb-4">👨‍⚕️</div>
+                    <h3 class="font-lora text-xl font-semibold text-green-800 mb-2">2. Consultation</h3>
+                    <p class="text-gray-600">Get personalized recommendations from our herbal medicine experts</p>
+                </div>
+                <div class="text-center p-6">
+                    <div class="text-4xl mb-4">📦</div>
+                    <h3 class="font-lora text-xl font-semibold text-green-800 mb-2">3. Delivery</h3>
+                    <p class="text-gray-600">Receive your products with detailed usage instructions</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-gradient-to-br from-green-500 to-green-600 text-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="font-lora text-3xl md:text-4xl font-bold mb-6">
+                Ready to Experience Natural Healing?
+            </h2>
+            <p class="text-xl mb-8">
+                Contact us today to learn more about our products and get personalized recommendations for your health needs.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="consultations.html" class="btn-primary bg-white text-green-600 hover:bg-gray-100">Book Consultation</a>
+                <a href="contact.html" class="btn-secondary border-white text-white hover:bg-white hover:text-green-600">Contact Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <!-- Company Info -->
+                <div class="space-y-4">
+                    <div class="flex items-center space-x-2">
+                        <img src="images/MAINGRACE-LOGO.webp" alt="Maingrace247 Logo" class="h-8 w-auto">
+                        <span class="font-lora text-lg font-semibold">Maingrace247</span>
+                    </div>
+                    <p class="text-gray-300">
+                        Traditional healing for modern wellness. Expert herbal medicine and holistic health solutions.
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="space-y-4">
+                    <h3 class="font-lora text-lg font-semibold">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-300 hover:text-green-400 transition-colors">Home</a></li>
+                        <li><a href="about.html" class="text-gray-300 hover:text-green-400 transition-colors">About Us</a></li>
+                        <li><a href="services.html" class="text-gray-300 hover:text-green-400 transition-colors">Services</a></li>
+                        <li><a href="products.html" class="text-gray-300 hover:text-green-400 transition-colors">Products</a></li>
+                        <li><a href="blog.html" class="text-gray-300 hover:text-green-400 transition-colors">Blog</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services -->
+                <div class="space-y-4">
+                    <h3 class="font-lora text-lg font-semibold">Services</h3>
+                    <ul class="space-y-2">
+                        <li><a href="consultations.html" class="text-gray-300 hover:text-green-400 transition-colors">Consultations</a></li>
+                        <li><a href="services.html" class="text-gray-300 hover:text-green-400 transition-colors">Herbal Remedies</a></li>
+                        <li><a href="services.html" class="text-gray-300 hover:text-green-400 transition-colors">Wellness Programs</a></li>
+                        <li><a href="services.html" class="text-gray-300 hover:text-green-400 transition-colors">Detox & Cleansing</a></li>
+                        <li><a href="services.html" class="text-gray-300 hover:text-green-400 transition-colors">Immune Support</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="space-y-4">
+                    <h3 class="font-lora text-lg font-semibold">Contact</h3>
+                    <div class="space-y-2">
+                        <p class="text-gray-300">📍 Nairobi, Kenya</p>
+                        <p class="text-gray-300">📞 +254 700 123 456</p>
+                        <p class="text-gray-300">✉️ info@maingrace247.com</p>
+                    </div>
+                    <div class="pt-4">
+                        <a href="contact.html" class="btn-primary">Get in Touch</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom Footer -->
+            <div class="border-t border-gray-800 mt-12 pt-8">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <p class="text-gray-400 text-sm">
+                        © 2025 Maingrace247 Tradomedical Service. All rights reserved.
+                    </p>
+                    <div class="flex space-x-6 mt-4 md:mt-0">
+                        <a href="privacy-policy.html" class="text-gray-400 hover:text-green-400 text-sm transition-colors">Privacy Policy</a>
+                        <a href="terms-of-service.html" class="text-gray-400 hover:text-green-400 text-sm transition-colors">Terms of Service</a>
+                        <a href="medical-disclaimer.html" class="text-gray-400 hover:text-green-400 text-sm transition-colors">Medical Disclaimer</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+    <script src="js/cursor.js"></script>
+</body>
+</html> 

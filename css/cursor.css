@@ -1,0 +1,236 @@
+/* Maingrace247 - Custom Cursor Styles */
+
+/* Custom Cursor Implementation */
+.custom-cursor {
+    cursor: url('images/cursor/leaf-cursor.webp'), auto;
+}
+
+/* Interactive Elements - Hand Cursor */
+.interactive-element,
+a,
+button,
+.btn-primary,
+.btn-secondary,
+.nav-link,
+.mobile-nav-link,
+.form-input,
+select,
+textarea,
+[role="button"],
+[tabindex] {
+    cursor: url('images/cursor/hand-cursor.webp'), pointer;
+}
+
+/* Cursor Hover Effects */
+.interactive-element:hover,
+a:hover,
+button:hover,
+.btn-primary:hover,
+.btn-secondary:hover,
+.nav-link:hover,
+.mobile-nav-link:hover {
+    cursor: url('images/cursor/hand-cursor.webp'), pointer;
+}
+
+/* Form Elements Focus States */
+.form-input:focus,
+select:focus,
+textarea:focus {
+    cursor: url('images/cursor/hand-cursor.webp'), text;
+}
+
+/* Disabled States */
+.interactive-element:disabled,
+a:disabled,
+button:disabled,
+.btn-primary:disabled,
+.btn-secondary:disabled,
+.form-input:disabled,
+select:disabled,
+textarea:disabled {
+    cursor: not-allowed;
+}
+
+/* Loading States */
+.loading,
+.processing {
+    cursor: wait;
+}
+
+/* Text Selection */
+::selection {
+    background-color: var(--primary-green);
+    color: white;
+}
+
+::-moz-selection {
+    background-color: var(--primary-green);
+    color: white;
+}
+
+/* Cursor Fallbacks for Older Browsers */
+@supports not (cursor: url('images/cursor/leaf-cursor.webp'), auto) {
+    .custom-cursor {
+        cursor: auto;
+    }
+    
+    .interactive-element,
+    a,
+    button,
+    .btn-primary,
+    .btn-secondary,
+    .nav-link,
+    .mobile-nav-link,
+    .form-input,
+    select,
+    textarea,
+    [role="button"],
+    [tabindex] {
+        cursor: pointer;
+    }
+    
+    .form-input:focus,
+    select:focus,
+    textarea:focus {
+        cursor: text;
+    }
+    
+    .interactive-element:disabled,
+    a:disabled,
+    button:disabled,
+    .btn-primary:disabled,
+    .btn-secondary:disabled,
+    .form-input:disabled,
+    select:disabled,
+    textarea:disabled {
+        cursor: not-allowed;
+    }
+    
+    .loading,
+    .processing {
+        cursor: wait;
+    }
+}
+
+/* Cursor Animation for Loading States */
+@keyframes cursor-pulse {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+}
+
+.loading .custom-cursor,
+.processing .custom-cursor {
+    animation: cursor-pulse 1s ease-in-out infinite;
+}
+
+/* Mobile Device Considerations */
+@media (max-width: 768px) {
+    /* Disable custom cursor on mobile devices for better performance */
+    .custom-cursor,
+    .interactive-element,
+    a,
+    button,
+    .btn-primary,
+    .btn-secondary,
+    .nav-link,
+    .mobile-nav-link,
+    .form-input,
+    select,
+    textarea,
+    [role="button"],
+    [tabindex] {
+        cursor: auto;
+    }
+    
+    .form-input:focus,
+    select:focus,
+    textarea:focus {
+        cursor: text;
+    }
+    
+    .interactive-element:disabled,
+    a:disabled,
+    button:disabled,
+    .btn-primary:disabled,
+    .btn-secondary:disabled,
+    .form-input:disabled,
+    select:disabled,
+    textarea:disabled {
+        cursor: not-allowed;
+    }
+}
+
+/* Touch Device Considerations */
+@media (hover: none) and (pointer: coarse) {
+    /* Disable custom cursor on touch devices */
+    .custom-cursor,
+    .interactive-element,
+    a,
+    button,
+    .btn-primary,
+    .btn-secondary,
+    .nav-link,
+    .mobile-nav-link,
+    .form-input,
+    select,
+    textarea,
+    [role="button"],
+    [tabindex] {
+        cursor: auto;
+    }
+}
+
+/* High Contrast Mode */
+@media (prefers-contrast: high) {
+    /* Ensure cursor visibility in high contrast mode */
+    .custom-cursor {
+        cursor: auto;
+    }
+    
+    .interactive-element,
+    a,
+    button,
+    .btn-primary,
+    .btn-secondary,
+    .nav-link,
+    .mobile-nav-link,
+    .form-input,
+    select,
+    textarea,
+    [role="button"],
+    [tabindex] {
+        cursor: pointer;
+    }
+}
+
+/* Reduced Motion Preferences */
+@media (prefers-reduced-motion: reduce) {
+    .loading .custom-cursor,
+    .processing .custom-cursor {
+        animation: none;
+    }
+}
+
+/* Print Styles */
+@media print {
+    /* Remove custom cursors for print */
+    .custom-cursor,
+    .interactive-element,
+    a,
+    button,
+    .btn-primary,
+    .btn-secondary,
+    .nav-link,
+    .mobile-nav-link,
+    .form-input,
+    select,
+    textarea,
+    [role="button"],
+    [tabindex] {
+        cursor: auto;
+    }
+} 

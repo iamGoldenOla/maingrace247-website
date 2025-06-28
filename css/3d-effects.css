@@ -1,0 +1,445 @@
+/* Maingrace247 - 3D Effects & Depth */
+
+/* 3D Transform Setup */
+.three-d-container {
+    perspective: 1000px;
+    transform-style: preserve-3d;
+}
+
+.three-d-element {
+    transform-style: preserve-3d;
+    transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* 3D Card Effects */
+.card-3d {
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card-3d:hover {
+    transform: rotateY(10deg) rotateX(5deg) translateZ(20px);
+    box-shadow: 
+        0 20px 40px rgba(0, 0, 0, 0.1),
+        0 0 0 1px rgba(255, 255, 255, 0.1);
+}
+
+.card-3d .card-front {
+    backface-visibility: hidden;
+    transform: translateZ(1px);
+}
+
+.card-3d .card-back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    transform: rotateY(180deg) translateZ(1px);
+}
+
+/* 3D Button Effects */
+.btn-3d {
+    position: relative;
+    transform-style: preserve-3d;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-3d::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.1);
+    transform: translateZ(-4px);
+    border-radius: inherit;
+}
+
+.btn-3d:hover {
+    transform: translateY(-2px) translateZ(4px);
+}
+
+.btn-3d:active {
+    transform: translateY(0) translateZ(0);
+}
+
+/* 3D Navigation Effects */
+.nav-3d {
+    transform-style: preserve-3d;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav-3d:hover {
+    transform: translateZ(10px);
+}
+
+/* 3D Form Input Effects */
+.input-3d {
+    transform-style: preserve-3d;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.input-3d:focus {
+    transform: translateZ(5px);
+    box-shadow: 
+        0 10px 20px rgba(0, 0, 0, 0.1),
+        0 0 0 2px var(--primary-green);
+}
+
+/* 3D Parallax Effects */
+.parallax-container {
+    perspective: 1000px;
+    transform-style: preserve-3d;
+    overflow: hidden;
+}
+
+.parallax-layer {
+    transform-style: preserve-3d;
+    transition: transform 0.1s ease-out;
+}
+
+.parallax-bg {
+    transform: translateZ(-100px) scale(1.5);
+}
+
+.parallax-mid {
+    transform: translateZ(-50px) scale(1.25);
+}
+
+.parallax-front {
+    transform: translateZ(0) scale(1);
+}
+
+/* 3D Floating Elements */
+.float-3d {
+    animation: float3d 6s ease-in-out infinite;
+    transform-style: preserve-3d;
+}
+
+@keyframes float3d {
+    0%, 100% {
+        transform: translateY(0px) translateZ(0px) rotateX(0deg) rotateY(0deg);
+    }
+    25% {
+        transform: translateY(-10px) translateZ(10px) rotateX(5deg) rotateY(5deg);
+    }
+    50% {
+        transform: translateY(-20px) translateZ(20px) rotateX(0deg) rotateY(10deg);
+    }
+    75% {
+        transform: translateY(-10px) translateZ(10px) rotateX(-5deg) rotateY(5deg);
+    }
+}
+
+/* 3D Tilt Effects */
+.tilt-3d {
+    transform-style: preserve-3d;
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.tilt-3d:hover {
+    transform: rotateX(10deg) rotateY(10deg);
+}
+
+/* 3D Stacked Cards */
+.stacked-cards {
+    position: relative;
+    transform-style: preserve-3d;
+}
+
+.stacked-card {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.stacked-card:nth-child(1) {
+    transform: translateZ(0px);
+}
+
+.stacked-card:nth-child(2) {
+    transform: translateZ(-10px);
+}
+
+.stacked-card:nth-child(3) {
+    transform: translateZ(-20px);
+}
+
+.stacked-cards:hover .stacked-card:nth-child(1) {
+    transform: translateZ(20px) rotateY(10deg);
+}
+
+.stacked-cards:hover .stacked-card:nth-child(2) {
+    transform: translateZ(10px) rotateY(5deg);
+}
+
+.stacked-cards:hover .stacked-card:nth-child(3) {
+    transform: translateZ(0px) rotateY(0deg);
+}
+
+/* 3D Gallery Effects */
+.gallery-3d {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    perspective: 1000px;
+}
+
+.gallery-item-3d {
+    transform-style: preserve-3d;
+    transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.gallery-item-3d:hover {
+    transform: rotateY(15deg) rotateX(5deg) translateZ(30px);
+}
+
+/* 3D Text Effects */
+.text-3d {
+    transform-style: preserve-3d;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.text-3d:hover {
+    transform: translateZ(10px);
+    text-shadow: 
+        0 0 10px rgba(76, 175, 80, 0.5),
+        0 0 20px rgba(76, 175, 80, 0.3),
+        0 0 30px rgba(76, 175, 80, 0.1);
+}
+
+/* 3D Icon Effects */
+.icon-3d {
+    transform-style: preserve-3d;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.icon-3d:hover {
+    transform: rotateY(180deg) translateZ(20px);
+}
+
+/* 3D Modal Effects */
+.modal-3d {
+    transform-style: preserve-3d;
+    perspective: 1000px;
+}
+
+.modal-content-3d {
+    transform: rotateX(10deg) translateZ(-100px);
+    transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-3d.active .modal-content-3d {
+    transform: rotateX(0deg) translateZ(0px);
+}
+
+/* 3D Loading Effects */
+.loading-3d {
+    transform-style: preserve-3d;
+    animation: loading3d 2s linear infinite;
+}
+
+@keyframes loading3d {
+    0% {
+        transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+    }
+    100% {
+        transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+    }
+}
+
+/* 3D Scroll Effects */
+.scroll-3d {
+    transform-style: preserve-3d;
+    transition: transform 0.1s ease-out;
+}
+
+.scroll-3d[data-scroll="0"] {
+    transform: translateZ(0px);
+}
+
+.scroll-3d[data-scroll="1"] {
+    transform: translateZ(10px);
+}
+
+.scroll-3d[data-scroll="2"] {
+    transform: translateZ(20px);
+}
+
+.scroll-3d[data-scroll="3"] {
+    transform: translateZ(30px);
+}
+
+/* 3D Hover Layers */
+.hover-layers {
+    position: relative;
+    transform-style: preserve-3d;
+}
+
+.hover-layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hover-layer:nth-child(1) {
+    transform: translateZ(0px);
+}
+
+.hover-layer:nth-child(2) {
+    transform: translateZ(-5px);
+    opacity: 0.8;
+}
+
+.hover-layer:nth-child(3) {
+    transform: translateZ(-10px);
+    opacity: 0.6;
+}
+
+.hover-layers:hover .hover-layer:nth-child(1) {
+    transform: translateZ(10px);
+}
+
+.hover-layers:hover .hover-layer:nth-child(2) {
+    transform: translateZ(5px);
+    opacity: 0.9;
+}
+
+.hover-layers:hover .hover-layer:nth-child(3) {
+    transform: translateZ(0px);
+    opacity: 0.8;
+}
+
+/* 3D Depth Shadows */
+.depth-shadow {
+    position: relative;
+}
+
+.depth-shadow::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.1);
+    transform: translateZ(-10px);
+    border-radius: inherit;
+    filter: blur(10px);
+}
+
+/* 3D Glassmorphism */
+.glass-3d {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transform-style: preserve-3d;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.glass-3d:hover {
+    transform: translateZ(10px);
+    background: rgba(255, 255, 255, 0.15);
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+/* 3D Neumorphism */
+.neumorph-3d {
+    background: linear-gradient(145deg, #e6e6e6, #ffffff);
+    box-shadow: 
+        20px 20px 60px #d1d1d1,
+        -20px -20px 60px #ffffff;
+    transform-style: preserve-3d;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.neumorph-3d:hover {
+    transform: translateZ(10px);
+    box-shadow: 
+        25px 25px 75px #d1d1d1,
+        -25px -25px 75px #ffffff;
+}
+
+.neumorph-3d:active {
+    transform: translateZ(0px);
+    box-shadow: 
+        inset 20px 20px 60px #d1d1d1,
+        inset -20px -20px 60px #ffffff;
+}
+
+/* 3D Responsive Adjustments */
+@media (max-width: 768px) {
+    .card-3d:hover {
+        transform: rotateY(5deg) rotateX(2deg) translateZ(10px);
+    }
+    
+    .gallery-item-3d:hover {
+        transform: rotateY(5deg) rotateX(2deg) translateZ(15px);
+    }
+    
+    .float-3d {
+        animation: none;
+    }
+    
+    .tilt-3d:hover {
+        transform: rotateX(5deg) rotateY(5deg);
+    }
+}
+
+/* 3D Performance Optimizations */
+@media (prefers-reduced-motion: reduce) {
+    .card-3d,
+    .btn-3d,
+    .nav-3d,
+    .input-3d,
+    .parallax-layer,
+    .float-3d,
+    .tilt-3d,
+    .stacked-card,
+    .gallery-item-3d,
+    .text-3d,
+    .icon-3d,
+    .modal-content-3d,
+    .loading-3d,
+    .scroll-3d,
+    .hover-layer,
+    .glass-3d,
+    .neumorph-3d {
+        transform: none !important;
+        transition: none !important;
+        animation: none !important;
+    }
+}
+
+/* 3D Hardware Acceleration */
+.three-d-container,
+.card-3d,
+.btn-3d,
+.nav-3d,
+.input-3d,
+.parallax-layer,
+.float-3d,
+.tilt-3d,
+.stacked-card,
+.gallery-item-3d,
+.text-3d,
+.icon-3d,
+.modal-content-3d,
+.loading-3d,
+.scroll-3d,
+.hover-layer,
+.glass-3d,
+.neumorph-3d {
+    will-change: transform;
+    backface-visibility: hidden;
+} 
