@@ -3,538 +3,112 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Maingrace247 - Traditional Herbal Medicine & Holistic Wellness</title>
-    <meta name="description" content="Discover natural healing with Maingrace247's traditional herbal remedies and holistic wellness consultations. Expert tradomedical services for your health journey.">
-    <meta name="keywords" content="traditional medicine, herbal remedies, holistic wellness, natural healing, tradomedical services, herbal consultations">
-    
-    <!-- Open Graph Meta Tags -->
-    <meta property="og:title" content="Maingrace247 - Traditional Herbal Medicine & Holistic Wellness">
-    <meta property="og:description" content="Expert traditional herbal medicine and holistic wellness consultations. Natural healing for mind, body, and spirit.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://maingrace247.com">
-    <meta property="og:image" content="https://maingrace247.com/images/og-image.webp">
-    
-    <!-- Twitter Card Meta Tags -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Maingrace247 - Traditional Herbal Medicine">
-    <meta name="twitter:description" content="Natural healing with traditional herbal remedies and holistic wellness consultations.">
-    <meta name="twitter:image" content="https://maingrace247.com/images/twitter-card.webp">
-    
-    <!-- Canonical URL -->
-    <link rel="canonical" href="https://maingrace247.com">
-    
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
-    <!-- TailwindCSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/style.css?v=1.1">
-    <link rel="stylesheet" href="css/header-fix.css?v=1.1">
-    <link rel="stylesheet" href="css/cursor.css?v=1.1">
-    <link rel="stylesheet" href="css/animations.css?v=1.1">
-    <link rel="stylesheet" href="css/3d-effects.css?v=1.1">
-    <link rel="stylesheet" href="css/mobile-responsive.css?v=1.1">
-    
-    <!-- Favicon -->
-    <link rel="icon" type="image/webp" href="images/favicon.webp">
+    <title>Modern Design Studio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body class="custom-cursor bg-gradient-to-br from-green-50 to-emerald-100 font-inter">
-    <!-- Loading Screen -->
-    <div id="loading-screen" class="fixed inset-0 bg-green-900 z-50 flex items-center justify-center">
-        <div class="text-center">
-            <div class="leaf-loader mb-4"></div>
-            <p class="text-green-100 text-lg">Loading Maingrace247...</p>
-        </div>
-    </div>
-
-    <!-- Navigation - FIXED HEADER -->
-    <nav class="fixed top-0 w-full z-40">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center h-16">
-                <!-- Logo -->
-                <div class="flex-shrink-0">
-                    <a href="index.html" class="flex items-center space-x-2">
-                        <span class="text-xl font-lora font-semibold">Maingrace247</span>
-                    </a>
-                </div>
-                
-                <!-- Right Side Navigation and CTA -->
-                <div class="hidden md:flex items-center space-x-4">
-                    <!-- Desktop Navigation -->
-                    <div class="flex items-baseline space-x-4">
-                        <a href="index.html" class="nav-link active">Home</a>
-                        <a href="about.html" class="nav-link">About</a>
-                        <a href="services.html" class="nav-link">Services</a>
-                        <a href="products.html" class="nav-link">Products</a>
-                        <a href="consultations.html" class="nav-link">Consultations</a>
-                        <a href="blog.html" class="nav-link">Blog</a>
-                        <a href="contact.html" class="nav-link">Contact</a>
-                    </div>
-                    
-                    <!-- CTA Button -->
-                    <a href="consultations.html" class="btn-primary">Book Consultation</a>
-                </div>
-                
-                <!-- Mobile menu button -->
-                <div class="md:hidden">
-                    <button id="mobile-menu-btn" class="p-2 rounded-md">
-                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-                        </svg>
-                    </button>
-                </div>
-            </div>
-        </div>
-        
-        <!-- Mobile Navigation -->
-        <div id="mobile-menu" class="hidden md:hidden">
-            <div class="px-2 pt-2 pb-3 space-y-1">
-                <a href="index.html" class="mobile-nav-link active">Home</a>
-                <a href="about.html" class="mobile-nav-link">About</a>
-                <a href="services.html" class="mobile-nav-link">Services</a>
-                <a href="products.html" class="mobile-nav-link">Products</a>
-                <a href="consultations.html" class="mobile-nav-link">Consultations</a>
-                <a href="blog.html" class="mobile-nav-link">Blog</a>
-                <a href="contact.html" class="mobile-nav-link">Contact</a>
-                <a href="consultations.html" class="btn-primary w-full mt-4">Book Consultation</a>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <div class="logo">Studio</div>
+                <ul class="nav-links">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#services" class="nav-link">Services</a></li>
+                    <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
             </div>
         </div>
     </nav>
 
-    <!-- Main Content -->
-    <main>
-        <!-- HERO SECTION -->
-        <section id="home" class="relative min-h-screen flex items-center justify-center overflow-hidden pt-16">
-            <!-- Background Layers -->
-            <div class="absolute inset-0 bg-gradient-to-br from-green-900/20 to-emerald-800/30"></div>
-            <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80')] bg-cover bg-center opacity-20"></div>
-            
-            <!-- Floating Elements -->
-            <div class="absolute top-20 left-10 floating-leaf">🍃</div>
-            <div class="absolute top-40 right-20 floating-leaf">🌿</div>
-            <div class="absolute bottom-40 left-20 floating-leaf">🌱</div>
-            
-            <div class="relative z-10 text-center px-4 max-w-4xl mx-auto">
-                <h1 class="text-5xl md:text-7xl font-lora font-bold text-green-800 mb-6 leading-tight">
-                    Natural Healing
-                    <span class="block text-green-600">Through Tradition</span>
-                </h1>
-                <p class="text-xl md:text-2xl text-green-700 mb-8 leading-relaxed">
-                    Discover the power of traditional herbal medicine and holistic wellness. 
-                    Expert consultations for your natural health journey.
-                </p>
-                <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                    <a href="consultations.html" class="btn-primary hero-cta-btn" style="border-radius: 2rem !important; width: 280px !important; min-width: 280px !important; max-width: 280px !important; display: flex !important; justify-content: center !important; align-items: center !important; background: linear-gradient(135deg, #4CAF50, #6FBF73) !important; color: white !important; padding: 1rem 2.5rem !important; font-weight: 600 !important; font-size: 1rem !important; text-decoration: none !important; border: none !important; cursor: pointer !important; box-shadow: 0 4px 15px rgba(76, 175, 80, 0.3) !important; transition: all 0.3s ease !important;">Book Your Consultation</a>
-                    <a href="services.html" class="btn-secondary hero-cta-btn" style="border-radius: 2rem !important; width: 280px !important; min-width: 280px !important; max-width: 280px !important; display: flex !important; justify-content: center !important; align-items: center !important; background: linear-gradient(135deg, #4CAF50, #6FBF73) !important; color: white !important; padding: 1rem 2.5rem !important; font-weight: 600 !important; font-size: 1rem !important; text-decoration: none !important; border: none !important; cursor: pointer !important; box-shadow: 0 4px 15px rgba(76, 175, 80, 0.3) !important; transition: all 0.3s ease !important;">Explore Services</a>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Creative Design Excellence</h1>
+            <p class="hero-subtitle">Elevate your brand with modern, stunning designs</p>
+            <button class="cta-button">Get Started</button>
+        </div>
+        <div class="hero-animation">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="card-icon">🎨</div>
+                    <h3>UI/UX Design</h3>
+                    <p>Beautiful and intuitive interfaces that users love</p>
                 </div>
-            </div>
-            
-            <!-- Scroll Indicator -->
-            <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2">
-                <div class="scroll-indicator"></div>
-            </div>
-        </section>
-
-        <!-- ABOUT SECTION -->
-        <section id="about" class="py-20 bg-white">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="grid lg:grid-cols-2 gap-12 items-center">
-                    <div class="space-y-6">
-                        <h2 class="text-4xl md:text-5xl font-lora font-bold text-green-800 mb-6">
-                            Our Healing Philosophy
-                        </h2>
-                        <p class="text-lg text-green-700 leading-relaxed">
-                            At Maingrace247, we believe in the wisdom of traditional medicine passed down through generations. 
-                            Our approach combines ancient herbal knowledge with modern understanding of holistic wellness.
-                        </p>
-                        <p class="text-lg text-green-700 leading-relaxed">
-                            We focus on treating the whole person - mind, body, and spirit - using natural remedies that 
-                            work in harmony with your body's natural healing processes.
-                        </p>
-                        <div class="grid grid-cols-2 gap-6 mt-8">
-                            <div class="text-center p-6 bg-green-50 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300">
-                                <div class="text-3xl mb-2">🌿</div>
-                                <h3 class="font-semibold text-green-800">Natural Remedies</h3>
-                                <p class="text-sm text-green-600">Traditional herbal medicine</p>
-                            </div>
-                            <div class="text-center p-6 bg-green-50 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300">
-                                <div class="text-3xl mb-2">💚</div>
-                                <h3 class="font-semibold text-green-800">Holistic Care</h3>
-                                <p class="text-sm text-green-600">Mind, body & spirit wellness</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="relative">
-                        <div class="bg-white p-4 rounded-2xl shadow-2xl">
-                            <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" alt="Traditional healing practices" class="w-full h-96 object-cover rounded-xl">
-                        </div>
-                    </div>
+                <div class="service-card">
+                    <div class="card-icon">💻</div>
+                    <h3>Web Development</h3>
+                    <p>Fast, responsive websites built with modern technology</p>
                 </div>
-            </div>
-        </section>
-
-        <!-- SERVICES SECTION -->
-        <section id="services" class="py-20 bg-gradient-to-br from-green-50 to-emerald-100">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="text-center mb-16">
-                    <h2 class="text-4xl md:text-5xl font-lora font-bold text-green-800 mb-6">
-                        Our Services
-                    </h2>
-                    <p class="text-xl text-green-700 max-w-3xl mx-auto">
-                        Comprehensive traditional medicine services tailored to your unique health needs
-                    </p>
+                <div class="service-card">
+                    <div class="card-icon">🎭</div>
+                    <h3>Branding</h3>
+                    <p>Distinctive brand identities that stand out</p>
                 </div>
-                
-                <!-- Bento Grid Services -->
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <!-- Consultation Card -->
-                    <div class="bg-white p-8 rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2">
-                        <div class="text-4xl mb-4">👨‍⚕️</div>
-                        <h3 class="text-2xl font-lora font-semibold text-green-800 mb-4">Personal Consultations</h3>
-                        <p class="text-green-700 mb-6">
-                            One-on-one consultations to assess your health needs and create personalized herbal treatment plans.
-                        </p>
-                        <ul class="text-green-600 mb-6 space-y-2">
-                            <li>• Health assessment</li>
-                            <li>• Personalized treatment</li>
-                            <li>• Follow-up care</li>
-                        </ul>
-                        <a href="consultations.html" class="btn-primary" style="border-radius: 2rem !important; background: linear-gradient(135deg, #4CAF50, #6FBF73) !important; color: white !important; padding: 1rem 2.5rem !important; font-weight: 600 !important; font-size: 1rem !important; text-decoration: none !important; border: none !important; cursor: pointer !important; box-shadow: 0 4px 15px rgba(76, 175, 80, 0.3) !important; transition: all 0.3s ease !important; display: inline-block !important; text-align: center !important;">Book Consultation</a>
-                    </div>
-
-                    <!-- Herbal Remedies Card -->
-                    <div class="bg-white p-8 rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2">
-                        <div class="text-4xl mb-4">🌿</div>
-                        <h3 class="text-2xl font-lora font-semibold text-green-800 mb-4">Herbal Remedies</h3>
-                        <p class="text-green-700 mb-6">
-                            Traditional herbal medicines crafted using time-tested recipes and the finest natural ingredients.
-                        </p>
-                        <ul class="text-green-600 mb-6 space-y-2">
-                            <li>• Custom formulations</li>
-                            <li>• Traditional recipes</li>
-                            <li>• Quality assurance</li>
-                        </ul>
-                        <a href="products.html" class="btn-secondary" style="border-radius: 2rem !important; background: linear-gradient(135deg, #4CAF50, #6FBF73) !important; color: white !important; padding: 1rem 2.5rem !important; font-weight: 600 !important; font-size: 1rem !important; text-decoration: none !important; border: none !important; cursor: pointer !important; box-shadow: 0 4px 15px rgba(76, 175, 80, 0.3) !important; transition: all 0.3s ease !important; display: inline-block !important; text-align: center !important;">View Products</a>
-                    </div>
-
-                    <!-- Wellness Programs Card -->
-                    <div class="bg-white p-8 rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2">
-                        <div class="text-4xl mb-4">🧘‍♀️</div>
-                        <h3 class="text-2xl font-lora font-semibold text-green-800 mb-4">Wellness Programs</h3>
-                        <p class="text-green-700 mb-6">
-                            Comprehensive wellness programs combining herbal medicine with lifestyle guidance and stress management.
-                        </p>
-                        <ul class="text-green-600 mb-6 space-y-2">
-                            <li>• Holistic approach</li>
-                            <li>• Lifestyle guidance</li>
-                            <li>• Ongoing support</li>
-                        </ul>
-                        <a href="services.html" class="btn-primary" style="border-radius: 2rem !important; background: linear-gradient(135deg, #4CAF50, #6FBF73) !important; color: white !important; padding: 1rem 2.5rem !important; font-weight: 600 !important; font-size: 1rem !important; text-decoration: none !important; border: none !important; cursor: pointer !important; box-shadow: 0 4px 15px rgba(76, 175, 80, 0.3) !important; transition: all 0.3s ease !important; display: inline-block !important; text-align: center !important;">Learn More</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- FEATURED PRODUCTS SECTION -->
-        <section id="products" class="py-20 bg-white">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="text-center mb-16">
-                    <h2 class="text-4xl md:text-5xl font-lora font-bold text-green-800 mb-6">
-                        Featured Products
-                    </h2>
-                    <p class="text-xl text-green-700 max-w-3xl mx-auto">
-                        Discover our most popular herbal remedies and wellness products
-                    </p>
-                </div>
-
-                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <!-- Product Card 1 -->
-                    <div class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 flex items-start space-x-4">
-                        <div class="text-3xl">🍵</div>
-                        <div class="flex-1 flex flex-col">
-                            <h3 class="text-xl font-lora font-semibold text-green-800 mb-2">Herbal Tea</h3>
-                            <p class="text-green-700 text-sm mb-2">Immune Boost Tea</p>
-                            <p class="text-green-700 text-sm mb-4 flex-1">Traditional blend for immune system support</p>
-                            <div class="flex justify-between items-center mt-auto">
-                                <span class="text-2xl font-bold text-green-800">$25</span>
-                                <a href="products.html" class="btn-primary" style="border-radius: 2rem !important; background: linear-gradient(135deg, #4CAF50, #6FBF73) !important; color: white !important; padding: 0.75rem 1.5rem !important; font-weight: 600 !important; font-size: 0.875rem !important; text-decoration: none !important; border: none !important; cursor: pointer !important; box-shadow: 0 4px 15px rgba(76, 175, 80, 0.3) !important; transition: all 0.3s ease !important; display: inline-block !important; text-align: center !important;">View Details</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Product Card 2 -->
-                    <div class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 flex items-start space-x-4">
-                        <div class="text-3xl">🌿</div>
-                        <div class="flex-1 flex flex-col">
-                            <h3 class="text-xl font-lora font-semibold text-green-800 mb-2">Detox Formula</h3>
-                            <p class="text-green-700 text-sm mb-2">Natural Cleansing Blend</p>
-                            <p class="text-green-700 text-sm mb-4 flex-1">Natural detoxification blend to cleanse your body and boost energy levels.</p>
-                            <div class="flex justify-between items-center mt-auto">
-                                <span class="text-2xl font-bold text-green-800">$35</span>
-                                <a href="products.html" class="btn-secondary" style="border-radius: 2rem !important; background: linear-gradient(135deg, #4CAF50, #6FBF73) !important; color: white !important; padding: 0.75rem 1.5rem !important; font-weight: 600 !important; font-size: 0.875rem !important; text-decoration: none !important; border: none !important; cursor: pointer !important; box-shadow: 0 4px 15px rgba(76, 175, 80, 0.3) !important; transition: all 0.3s ease !important; display: inline-block !important; text-align: center !important;">View Details</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Product Card 3 -->
-                    <div class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 flex items-start space-x-4">
-                        <div class="text-3xl">💚</div>
-                        <div class="flex-1 flex flex-col">
-                            <h3 class="text-xl font-lora font-semibold text-green-800 mb-2">Heart Health</h3>
-                            <p class="text-green-700 text-sm mb-2">Cardiovascular Support</p>
-                            <p class="text-green-700 text-sm mb-4 flex-1">Support cardiovascular health with our natural heart wellness formula.</p>
-                            <div class="flex justify-between items-center mt-auto">
-                                <span class="text-2xl font-bold text-green-800">$45</span>
-                                <a href="products.html" class="btn-primary" style="border-radius: 2rem !important; background: linear-gradient(135deg, #4CAF50, #6FBF73) !important; color: white !important; padding: 0.75rem 1.5rem !important; font-weight: 600 !important; font-size: 0.875rem !important; text-decoration: none !important; border: none !important; cursor: pointer !important; box-shadow: 0 4px 15px rgba(76, 175, 80, 0.3) !important; transition: all 0.3s ease !important; display: inline-block !important; text-align: center !important;">View Details</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- TESTIMONIALS SECTION -->
-        <section id="testimonials" class="py-20 bg-gradient-to-br from-green-50 to-emerald-100">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="text-center mb-16">
-                    <h2 class="text-4xl md:text-5xl font-lora font-bold text-green-800 mb-6">
-                        What Our Clients Say
-                    </h2>
-                    <p class="text-xl text-green-700 max-w-3xl mx-auto">
-                        Real stories from clients who have experienced the benefits of traditional medicine
-                    </p>
-                </div>
-
-                <div class="grid md:grid-cols-3 gap-8">
-                    <!-- Testimonial Card 1 -->
-                    <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300">
-                        <div class="flex items-center mb-4">
-                            <div class="text-yellow-400">★★★★★</div>
-                        </div>
-                        <p class="text-gray-600 mb-6 italic">
-                            "The consultation was incredibly thorough. Dr. Grace took the time to understand my health concerns and provided a personalized treatment plan that has made a real difference in my overall well-being."
-                        </p>
-                        <div class="flex items-center">
-                            <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mr-4">
-                                <span class="text-green-800 font-semibold">SM</span>
-                            </div>
-                            <div>
-                                <h4 class="font-semibold text-green-800">Sarah M.</h4>
-                                <p class="text-sm text-gray-500">Nairobi, Kenya</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Testimonial Card 2 -->
-                    <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300">
-                        <div class="flex items-center mb-4">
-                            <div class="text-yellow-400">★★★★★</div>
-                        </div>
-                        <p class="text-gray-600 mb-6 italic">
-                            "I was skeptical about traditional medicine, but the consultation opened my eyes to natural healing. The herbal remedies have been effective and I feel much better than I have in years."
-                        </p>
-                        <div class="flex items-center">
-                            <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mr-4">
-                                <span class="text-green-800 font-semibold">JK</span>
-                            </div>
-                            <div>
-                                <h4 class="font-semibold text-green-800">John K.</h4>
-                                <p class="text-sm text-gray-500">Mombasa, Kenya</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Testimonial Card 3 -->
-                    <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300">
-                        <div class="flex items-center mb-4">
-                            <div class="text-yellow-400">★★★★★</div>
-                        </div>
-                        <p class="text-gray-600 mb-6 italic">
-                            "The wellness program has been life-changing. The ongoing support and guidance have helped me achieve better health and well-being than I ever thought possible."
-                        </p>
-                        <div class="flex items-center">
-                            <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mr-4">
-                                <span class="text-green-800 font-semibold">MW</span>
-                            </div>
-                            <div>
-                                <h4 class="font-semibold text-green-800">Mary W.</h4>
-                                <p class="text-sm text-gray-500">Kisumu, Kenya</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- CTA SECTION -->
-        <section id="consultations" class="py-20 bg-gradient-to-br from-green-500 to-green-600 text-white">
-            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-                <h2 class="text-4xl md:text-5xl font-lora font-bold mb-6">
-                    Ready to Start Your Healing Journey?
-                </h2>
-                <p class="text-xl mb-8">
-                    Book your consultation today and take the first step towards natural wellness and holistic health.
-                </p>
-                <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                    <a href="consultations.html" class="btn-primary" style="border-radius: 2rem !important; background: linear-gradient(135deg, #4CAF50, #6FBF73) !important; color: white !important; padding: 1rem 2.5rem !important; font-weight: 600 !important; font-size: 1rem !important; text-decoration: none !important; border: none !important; cursor: pointer !important; box-shadow: 0 4px 15px rgba(76, 175, 80, 0.3) !important; transition: all 0.3s ease !important; display: inline-block !important; text-align: center !important;">Book Consultation</a>
-                    <a href="contact.html" class="btn-secondary" style="border-radius: 2rem !important; background: linear-gradient(135deg, #4CAF50, #6FBF73) !important; color: white !important; padding: 1rem 2.5rem !important; font-weight: 600 !important; font-size: 1rem !important; text-decoration: none !important; border: none !important; cursor: pointer !important; box-shadow: 0 4px 15px rgba(76, 175, 80, 0.3) !important; transition: all 0.3s ease !important; display: inline-block !important; text-align: center !important;">Contact Us</a>
-                </div>
-            </div>
-        </section>
-
-        <!-- CONTACT SECTION -->
-        <section id="contact" class="py-20 bg-white">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="grid lg:grid-cols-2 gap-12">
-                    <div>
-                        <h2 class="text-4xl md:text-5xl font-lora font-bold text-green-800 mb-6">
-                            Get in Touch
-                        </h2>
-                        <p class="text-lg text-green-700 mb-8">
-                            Ready to start your wellness journey? Contact us for consultations, questions, or support.
-                        </p>
-                        
-                        <div class="space-y-6">
-                            <div class="flex items-center space-x-4">
-                                <div class="text-2xl">📍</div>
-                                <div>
-                                    <h3 class="font-semibold text-green-800">Location</h3>
-                                    <p class="text-gray-600">Nairobi, Kenya</p>
-                                </div>
-                            </div>
-                            
-                            <div class="flex items-center space-x-4">
-                                <div class="text-2xl">📞</div>
-                                <div>
-                                    <h3 class="font-semibold text-green-800">Phone</h3>
-                                    <p class="text-gray-600">+254 700 123 456</p>
-                                </div>
-                            </div>
-                            
-                            <div class="flex items-center space-x-4">
-                                <div class="text-2xl">✉️</div>
-                                <div>
-                                    <h3 class="font-semibold text-green-800">Email</h3>
-                                    <p class="text-gray-600">info@maingrace247.com</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="bg-green-50 p-8 rounded-2xl shadow-lg">
-                        <h3 class="font-lora text-2xl font-semibold text-green-800 mb-6">
-                            Send Us a Message
-                        </h3>
-                        <form class="space-y-4">
-                            <div class="grid md:grid-cols-2 gap-4">
-                                <input type="text" placeholder="First Name" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent">
-                                <input type="text" placeholder="Last Name" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent">
-                            </div>
-                            <input type="email" placeholder="Email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent">
-                            <textarea rows="4" placeholder="Your Message" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent"></textarea>
-                            <button type="submit" class="btn-primary" style="border-radius: 2rem !important; background: linear-gradient(135deg, #4CAF50, #6FBF73) !important; color: white !important; padding: 1rem 2.5rem !important; font-weight: 600 !important; font-size: 1rem !important; text-decoration: none !important; border: none !important; cursor: pointer !important; box-shadow: 0 4px 15px rgba(76, 175, 80, 0.3) !important; transition: all 0.3s ease !important; display: inline-block !important; text-align: center !important; width: auto !important; min-width: 200px !important;">Send Message</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <!-- Footer -->
-    <footer class="bg-gray-900 text-white py-16">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid md:grid-cols-4 gap-8">
-                <!-- Company Info -->
-                <div class="space-y-4">
-                    <div class="flex items-center space-x-2">
-                        <img src="images/MAINGRACE-LOGO.webp" alt="Maingrace247 Logo" class="h-8 w-auto">
-                        <span class="font-lora text-lg font-semibold">Maingrace247</span>
-                    </div>
-                    <p class="text-gray-300">
-                        Traditional healing for modern wellness. Expert herbal medicine and holistic health solutions.
-                    </p>
-                    <div class="flex space-x-4">
-                        <a href="#" class="text-gray-400 hover:text-green-400 transition-colors">
-                            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
-                            </svg>
-                        </a>
-                        <a href="#" class="text-gray-400 hover:text-green-400 transition-colors">
-                            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.56-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.98 8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23z"/>
-                            </svg>
-                        </a>
-                        <a href="#" class="text-gray-400 hover:text-green-400 transition-colors">
-                            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.174-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 2.567-1.623 0-3.768-2.245-3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.099.12.112.225.085.345-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.402.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.357-.629-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24.009 12.017 24.009c6.624 0 11.99-5.367 11.99-11.988C24.007 5.367 18.641.001 12.017.001z"/>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Quick Links -->
-                <div class="space-y-4">
-                    <h3 class="font-lora text-lg font-semibold">Quick Links</h3>
-                    <ul class="space-y-2">
-                        <li><a href="#home" class="text-gray-300 hover:text-green-400 transition-colors">Home</a></li>
-                        <li><a href="#about" class="text-gray-300 hover:text-green-400 transition-colors">About Us</a></li>
-                        <li><a href="#services" class="text-gray-300 hover:text-green-400 transition-colors">Services</a></li>
-                        <li><a href="#products" class="text-gray-300 hover:text-green-400 transition-colors">Products</a></li>
-                        <li><a href="blog.html" class="text-gray-300 hover:text-green-400 transition-colors">Blog</a></li>
-                    </ul>
-                </div>
-
-                <!-- Services -->
-                <div class="space-y-4">
-                    <h3 class="font-lora text-lg font-semibold">Services</h3>
-                    <ul class="space-y-2">
-                        <li><a href="#consultations" class="text-gray-300 hover:text-green-400 transition-colors">Consultations</a></li>
-                        <li><a href="#services" class="text-gray-300 hover:text-green-400 transition-colors">Herbal Remedies</a></li>
-                        <li><a href="#services" class="text-gray-300 hover:text-green-400 transition-colors">Wellness Programs</a></li>
-                        <li><a href="#services" class="text-gray-300 hover:text-green-400 transition-colors">Detox & Cleansing</a></li>
-                        <li><a href="#services" class="text-gray-300 hover:text-green-400 transition-colors">Immune Support</a></li>
-                    </ul>
-                </div>
-
-                <!-- Contact Info -->
-                <div class="space-y-4">
-                    <h3 class="font-lora text-lg font-semibold">Contact</h3>
-                    <div class="space-y-2">
-                        <p class="text-gray-300">📍 Nairobi, Kenya</p>
-                        <p class="text-gray-300">📞 +254 700 123 456</p>
-                        <p class="text-gray-300">✉️ info@maingrace247.com</p>
-                    </div>
-                    <div class="pt-4">
-                        <a href="#contact" class="btn-primary" style="border-radius: 2rem !important; background: linear-gradient(135deg, #4CAF50, #6FBF73) !important; color: white !important; padding: 1rem 2.5rem !important; font-weight: 600 !important; font-size: 1rem !important; text-decoration: none !important; border: none !important; cursor: pointer !important; box-shadow: 0 4px 15px rgba(76, 175, 80, 0.3) !important; transition: all 0.3s ease !important; display: inline-block !important; text-align: center !important;">Get in Touch</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Bottom Footer -->
-            <div class="border-t border-gray-800 mt-12 pt-8">
-                <div class="flex flex-col md:flex-row justify-between items-center">
-                    <p class="text-gray-400 text-sm">
-                        © 2025 Maingrace247 Tradomedical Service. All rights reserved.
-                    </p>
-                    <div class="flex space-x-6 mt-4 md:mt-0">
-                        <a href="privacy-policy.html" class="text-gray-400 hover:text-green-400 text-sm transition-colors">Privacy Policy</a>
-                        <a href="terms-of-service.html" class="text-gray-400 hover:text-green-400 text-sm transition-colors">Terms of Service</a>
-                        <a href="medical-disclaimer.html" class="text-gray-400 hover:text-green-400 text-sm transition-colors">Medical Disclaimer</a>
-                    </div>
+                <div class="service-card">
+                    <div class="card-icon">📱</div>
+                    <h3>Mobile Apps</h3>
+                    <p>Native and cross-platform mobile applications</p>
                 </div>
             </div>
         </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2 class="section-title">Featured Work</h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <div class="portfolio-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"></div>
+                    <h3>Project Alpha</h3>
+                    <p>E-commerce Platform</p>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);"></div>
+                    <h3>Project Beta</h3>
+                    <p>SaaS Dashboard</p>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);"></div>
+                    <h3>Project Gamma</h3>
+                    <p>Mobile App</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <form class="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit" class="cta-button">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Design Studio. All rights reserved.</p>
+        </div>
     </footer>
 
-    <!-- JavaScript -->
-    <script src="js/main.js"></script>
-    <script src="js/cursor.js"></script>
-    <script src="js/3d-effects.js"></script>
-    <script src="js/animations.js"></script>
-    <script src="js/booking.js"></script>
+    <script src="script.js"></script>
 </body>
-</html> 
+</html>
